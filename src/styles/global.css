@@ -1,0 +1,171 @@
+@import './tokens.css';
+
+/* Importação das famílias tipográficas com font-display: swap */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap');
+
+/* ==========================================================================
+   RESET & REGRAS GERAIS DE ACESSIBILIDADE
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  line-height: var(--lh-body);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  text-rendering: optimizeLegibility;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  min-height: 100vh;
+}
+
+/* Link para pular direto para o conteúdo (Acessibilidade WCAG) */
+.skip-to-content {
+  position: absolute;
+  top: -999px;
+  left: 16px;
+  background: var(--ink);
+  color: var(--bg-page);
+  padding: 8px 16px;
+  z-index: 10000;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  top: 16px;
+}
+
+/* ==========================================================================
+   REGRA CRÍTICA DE ANCORAGEM (COMPENSAÇÃO DO HEADER FIXO)
+   ========================================================================== */
+[id],
+section,
+article,
+h1, h2, h3, h4 {
+  scroll-margin-top: var(--scroll-offset);
+}
+
+/* ==========================================================================
+   TIPOGRAFIA & RITMO DE LEITURA
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  color: var(--ink);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+p {
+  margin-bottom: 1.35em;
+  color: var(--ink);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent) 80%, black);
+}
+
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+/* ==========================================================================
+   ESTILOS DE CALLOUTS (PADRÃO OBSIDIAN ADAPTADO)
+   ========================================================================== */
+.callout {
+  background-color: var(--bg-card);
+  border-left: 4px solid var(--accent);
+  padding: 20px 24px;
+  margin: 24px 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  border-top: 1px solid var(--border-subtle);
+  border-right: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.callout-title {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.callout-abstract {
+  border-left-color: var(--eixo-1);
+}
+.callout-abstract .callout-title {
+  color: var(--eixo-1);
+}
+
+.callout-info {
+  border-left-color: var(--eixo-4);
+}
+.callout-info .callout-title {
+  color: var(--eixo-4);
+}
+
+.callout-tip {
+  border-left-color: var(--eixo-6);
+}
+.callout-tip .callout-title {
+  color: var(--eixo-6);
+}
+
+.callout-warning {
+  border-left-color: var(--eixo-2);
+}
+.callout-warning .callout-title {
+  color: var(--eixo-2);
+}
+
+/* ==========================================================================
+   UTILITÁRIOS
+   ========================================================================== */
+.reading-container {
+  max-width: var(--measure);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

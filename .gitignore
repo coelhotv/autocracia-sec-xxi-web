@@ -1,0 +1,17 @@
+# Build e dependências
+dist/
+node_modules/
+.astro/
+
+# Ambiente e SO
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

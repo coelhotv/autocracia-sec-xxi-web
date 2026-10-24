@@ -1,0 +1,582 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const fichas = await getCollection('fichas');
+
+// Ordena inicialmente por ID numérico
+const sortedFichas = [...fichas].sort((a, b) => {
+  const [aEixo, aNum] = a.data.id.split('.').map(Number);
+  const [bEixo, bNum] = b.data.id.split('.').map(Number);
+  if (aEixo !== bEixo) return aEixo - bEixo;
+  return aNum - bNum;
+});
+
+const breadcrumbs = [
+  { label: 'Obras' }
+];
+
+const eixosLabels: Record<string, string> = {
+  '1': 'Eixo 1 · Raízes psíquicas',
+  '2': 'Eixo 2 · Base material',
+  '3': 'Eixo 3 · Moral, gênero e religião',
+  '4': 'Eixo 4 · Mente e tecnologia',
+  '5': 'Eixo 5 · Instituições e coerção',
+  '6': 'Eixo 6 · Brasil e política aplicada',
+  '7': 'Eixo 7 · Saídas e resistência',
+};
+---
+
+<BaseLayout
+  title="Catálogo das 69 Obras — Autocracia no Século XXI"
+  description="Catálogo interativo com as 69 fichas analíticas da Matriz Teórica de Autocracia, Tecnologia e Exaustão Cognitiva."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="catalog-container">
+    <!-- Cabeçalho -->
+    <header class="catalog-header">
+      <div class="catalog-eyebrow">Corpus Analítico</div>
+      <h1 class="catalog-title">Catálogo de Obras</h1>
+      <p class="catalog-desc">
+        Exibindo <span id="filteredCount" class="count-badge">{sortedFichas.length}</span> de {sortedFichas.length} fichas analíticas estruturadas nos 7 eixos da investigação.
+      </p>
+    </header>
+
+    <!-- Barra de Filtros e Ordenação -->
+    <div class="filter-deck" role="search" aria-label="Filtros do catálogo">
+      <!-- Busca rápida de texto -->
+      <div class="filter-group search-group">
+        <label for="textSearch" class="filter-label">Busca Rápida</label>
+        <input
+          type="text"
+          id="textSearch"
+          class="filter-input"
+          placeholder="Filtrar por obra ou autor..."
+          autocomplete="off"
+        />
+      </div>
+
+      <!-- Filtro por Eixo -->
+      <div class="filter-group">
+        <label for="eixoSelect" class="filter-label">Eixo Temático</label>
+        <select id="eixoSelect" class="filter-select">
+          <option value="all">Todos os 7 Eixos</option>
+          <option value="1">Eixo 1 · Raízes psíquicas</option>
+          <option value="2">Eixo 2 · Base material</option>
+          <option value="3">Eixo 3 · Moral, gênero e religião</option>
+          <option value="4">Eixo 4 · Mente e tecnologia</option>
+          <option value="5">Eixo 5 · Instituições e coerção</option>
+          <option value="6">Eixo 6 · Brasil e política aplicada</option>
+          <option value="7">Eixo 7 · Saídas e resistência</option>
+        </select>
+      </div>
+
+      <!-- Filtro por Papel -->
+      <div class="filter-group">
+        <label for="papelSelect" class="filter-label">Papel Teórico</label>
+        <select id="papelSelect" class="filter-select">
+          <option value="all">Todos os Papéis</option>
+          <option value="base">Tese Base</option>
+          <option value="contraponto">Contraponto</option>
+        </select>
+      </div>
+
+      <!-- Filtro por Tipo -->
+      <div class="filter-group">
+        <label for="tipoSelect" class="filter-label">Tipo de Obra</label>
+        <select id="tipoSelect" class="filter-select">
+          <option value="all">Livros e Artigos</option>
+          <option value="livro">Apenas Livros</option>
+          <option value="artigo">Apenas Artigos</option>
+        </select>
+      </div>
+
+      <!-- Ordenação -->
+      <div class="filter-group">
+        <label for="sortSelect" class="filter-label">Ordenação</label>
+        <select id="sortSelect" class="filter-select">
+          <option value="matriz">Ordem da Matriz (Eixo / ID)</option>
+          <option value="ano-asc">Ano de Publicação (Cronológico ↑)</option>
+          <option value="ano-desc">Ano de Publicação (Mais Recente ↓)</option>
+          <option value="autor-asc">Autor (A–Z)</option>
+        </select>
+      </div>
+
+      <button type="button" id="resetFiltersBtn" class="reset-btn" aria-label="Limpar filtros">
+        Limpar
+      </button>
+    </div>
+
+    <!-- Lista de Obras (Tabela para Desktop / Cartões para Mobile) -->
+    <div class="table-wrapper">
+      <table class="catalog-table" id="worksTable">
+        <thead>
+          <tr>
+            <th class="col-id">ID</th>
+            <th class="col-obra">Obra</th>
+            <th class="col-autor">Autor</th>
+            <th class="col-ano">Ano</th>
+            <th class="col-eixo">Eixo</th>
+            <th class="col-papel">Papel</th>
+            <th class="col-tipo">Tipo</th>
+          </tr>
+        </thead>
+        <tbody id="worksTbody">
+          {sortedFichas.map((ficha) => {
+            const eixoNum = ficha.data.id.split('.')[0];
+            const papelVal = ficha.data.papel === 'contraponto' ? 'contraponto' : 'base';
+            const searchIndex = `${ficha.data.obra} ${ficha.data.autor} ${ficha.data.ano} ${ficha.data.id}`.toLowerCase();
+
+            return (
+              <tr
+                class="work-row"
+                data-id={ficha.data.id}
+                data-eixo={eixoNum}
+                data-papel={papelVal}
+                data-tipo={ficha.data.tipo}
+                data-ano={ficha.data.ano}
+                data-autor={ficha.data.autor}
+                data-search={searchIndex}
+              >
+                <td class="col-id">
+                  <span class="id-mono">{ficha.data.id}</span>
+                </td>
+                <td class="col-obra">
+                  <a href={`/obras/${ficha.id}`} class="work-link">
+                    <strong>{ficha.data.obra}</strong>
+                  </a>
+                </td>
+                <td class="col-autor">{ficha.data.autor}</td>
+                <td class="col-ano">
+                  <span class="ano-mono">{ficha.data.ano}</span>
+                </td>
+                <td class="col-eixo">
+                  <span class="eixo-tag" data-eixo={eixoNum}>
+                    {eixosLabels[eixoNum] || `Eixo ${eixoNum}`}
+                  </span>
+                </td>
+                <td class="col-papel">
+                  {papelVal === 'contraponto' ? (
+                    <span class="badge-role contraponto">Contraponto</span>
+                  ) : (
+                    <span class="badge-role base">Tese</span>
+                  )}
+                </td>
+                <td class="col-tipo">
+                  <span class="tipo-tag">{ficha.data.tipo}</span>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+
+      <!-- Estado Vazio -->
+      <div id="emptyState" class="empty-state" style="display: none;">
+        <h3>Nenhuma obra encontrada</h3>
+        <p>Tente ajustar os filtros ou pesquisar com termos mais amplos.</p>
+        <button type="button" id="emptyResetBtn" class="btn btn-secondary">Limpar todos os filtros</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Leve de Filtragem e Ordenação Client-Side (Vanilla JS < 2KB) -->
+  <script>
+    (function() {
+      const textInput = document.getElementById('textSearch') as HTMLInputElement;
+      const eixoSelect = document.getElementById('eixoSelect') as HTMLSelectElement;
+      const papelSelect = document.getElementById('papelSelect') as HTMLSelectElement;
+      const tipoSelect = document.getElementById('tipoSelect') as HTMLSelectElement;
+      const sortSelect = document.getElementById('sortSelect') as HTMLSelectElement;
+      const resetBtn = document.getElementById('resetFiltersBtn');
+      const emptyResetBtn = document.getElementById('emptyResetBtn');
+      const countEl = document.getElementById('filteredCount');
+      const emptyState = document.getElementById('emptyState');
+      const tbody = document.getElementById('worksTbody');
+
+      const rows = Array.from(document.querySelectorAll<HTMLTableRowElement>('.work-row'));
+
+      // 1. Suporte a Pré-filtro via URL (?eixo=X)
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialEixo = urlParams.get('eixo');
+      if (initialEixo && ['1', '2', '3', '4', '5', '6', '7'].includes(initialEixo)) {
+        eixoSelect.value = initialEixo;
+      }
+
+      function applyFilterAndSort() {
+        const query = textInput.value.trim().toLowerCase();
+        const selectedEixo = eixoSelect.value;
+        const selectedPapel = papelSelect.value;
+        const selectedTipo = tipoSelect.value;
+        const selectedSort = sortSelect.value;
+
+        let visibleCount = 0;
+
+        // Filtragem
+        rows.forEach(row => {
+          const rowSearch = row.getAttribute('data-search') || '';
+          const rowEixo = row.getAttribute('data-eixo') || '';
+          const rowPapel = row.getAttribute('data-papel') || '';
+          const rowTipo = row.getAttribute('data-tipo') || '';
+
+          const matchText = !query || rowSearch.includes(query);
+          const matchEixo = selectedEixo === 'all' || rowEixo === selectedEixo;
+          const matchPapel = selectedPapel === 'all' || rowPapel === selectedPapel;
+          const matchTipo = selectedTipo === 'all' || rowTipo === selectedTipo;
+
+          const isVisible = matchText && matchEixo && matchPapel && matchTipo;
+          row.style.display = isVisible ? '' : 'none';
+          if (isVisible) visibleCount++;
+        });
+
+        // Ordenação
+        const visibleRows = rows.filter(r => r.style.display !== 'none');
+        visibleRows.sort((a, b) => {
+          if (selectedSort === 'ano-asc') {
+            return (parseInt(a.getAttribute('data-ano') || '0', 10) - parseInt(b.getAttribute('data-ano') || '0', 10));
+          } else if (selectedSort === 'ano-desc') {
+            return (parseInt(b.getAttribute('data-ano') || '0', 10) - parseInt(a.getAttribute('data-ano') || '0', 10));
+          } else if (selectedSort === 'autor-asc') {
+            return (a.getAttribute('data-autor') || '').localeCompare(b.getAttribute('data-autor') || '', 'pt-BR');
+          } else {
+            // Ordem da Matriz (Eixo / ID)
+            const [aEixo, aNum] = (a.getAttribute('data-id') || '0.0').split('.').map(Number);
+            const [bEixo, bNum] = (b.getAttribute('data-id') || '0.0').split('.').map(Number);
+            if (aEixo !== bEixo) return aEixo - bEixo;
+            return aNum - bNum;
+          }
+        });
+
+        if (tbody) {
+          visibleRows.forEach(row => tbody.appendChild(row));
+        }
+
+        // Atualização do contador e estado vazio
+        if (countEl) countEl.textContent = String(visibleCount);
+        if (emptyState) {
+          emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+      }
+
+      function resetFilters() {
+        textInput.value = '';
+        eixoSelect.value = 'all';
+        papelSelect.value = 'all';
+        tipoSelect.value = 'all';
+        sortSelect.value = 'matriz';
+        applyFilterAndSort();
+      }
+
+      textInput.addEventListener('input', applyFilterAndSort);
+      eixoSelect.addEventListener('change', applyFilterAndSort);
+      papelSelect.addEventListener('change', applyFilterAndSort);
+      tipoSelect.addEventListener('change', applyFilterAndSort);
+      sortSelect.addEventListener('change', applyFilterAndSort);
+      resetBtn?.addEventListener('click', resetFilters);
+      emptyResetBtn?.addEventListener('click', resetFilters);
+
+      // Aplicação inicial imediata
+      applyFilterAndSort();
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  .catalog-header {
+    margin-bottom: 32px;
+  }
+
+  .catalog-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+
+  .catalog-title {
+    font-family: var(--font-serif);
+    font-size: 2.85rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .catalog-desc {
+    color: var(--ink-secondary);
+    font-size: 1.1rem;
+  }
+
+  .count-badge {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  /* BARRA DE FILTROS */
+  .filter-deck {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 18px 22px;
+    display: grid;
+    grid-template-columns: 1.8fr 1.3fr 1fr 1fr 1.3fr auto;
+    gap: 14px;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .filter-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .filter-input, .filter-select {
+    background-color: var(--bg-page);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+    height: 38px;
+  }
+
+  .filter-input:focus, .filter-select:focus {
+    border-color: var(--accent);
+  }
+
+  .reset-btn {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 14px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--ink-secondary);
+    cursor: pointer;
+    height: 38px;
+    transition: all 0.15s;
+  }
+
+  .reset-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* TABELA */
+  .table-wrapper {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .catalog-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .catalog-table th {
+    background-color: var(--bg-inset);
+    color: var(--ink-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+
+  .catalog-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border-subtle);
+    vertical-align: middle;
+  }
+
+  .work-row:hover td {
+    background-color: var(--bg-inset);
+  }
+
+  .col-id {
+    width: 70px;
+  }
+
+  .id-mono {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .col-obra {
+    min-width: 240px;
+  }
+
+  .work-link {
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .work-link:hover {
+    color: var(--accent);
+  }
+
+  .col-autor {
+    color: var(--ink-secondary);
+    white-space: nowrap;
+  }
+
+  .col-ano {
+    width: 80px;
+  }
+
+  .ano-mono {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+  }
+
+  .col-eixo {
+    white-space: nowrap;
+  }
+
+  .eixo-tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 3px 8px;
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-inset);
+    color: var(--ink-secondary);
+    border: 1px solid var(--border-subtle);
+  }
+
+  .eixo-tag[data-eixo="1"] { border-color: var(--eixo-1-border); color: var(--eixo-1); }
+  .eixo-tag[data-eixo="2"] { border-color: var(--eixo-2-border); color: var(--eixo-2); }
+  .eixo-tag[data-eixo="3"] { border-color: var(--eixo-3-border); color: var(--eixo-3); }
+  .eixo-tag[data-eixo="4"] { border-color: var(--eixo-4-border); color: var(--eixo-4); }
+  .eixo-tag[data-eixo="5"] { border-color: var(--eixo-5-border); color: var(--eixo-5); }
+  .eixo-tag[data-eixo="6"] { border-color: var(--eixo-6-border); color: var(--eixo-6); }
+  .eixo-tag[data-eixo="7"] { border-color: var(--eixo-7-border); color: var(--eixo-7); }
+
+  .badge-role {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    text-transform: lowercase;
+  }
+
+  .badge-role.base {
+    background-color: var(--bg-inset);
+    color: var(--ink-muted);
+  }
+
+  .badge-role.contraponto {
+    background-color: var(--accent-tint);
+    color: var(--accent);
+    border: 1px solid var(--accent-border);
+    font-weight: 500;
+  }
+
+  .tipo-tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+    text-transform: capitalize;
+  }
+
+  /* ESTADO VAZIO */
+  .empty-state {
+    padding: 64px 24px;
+    text-align: center;
+  }
+
+  .empty-state h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  .empty-state p {
+    color: var(--ink-secondary);
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 960px) {
+    .filter-deck {
+      grid-template-columns: 1fr 1fr;
+    }
+    .search-group {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .table-wrapper {
+      border: none;
+      background: none;
+    }
+
+    .catalog-table, .catalog-table thead, .catalog-table tbody, .catalog-table th, .catalog-table td, .catalog-table tr {
+      display: block;
+    }
+
+    .catalog-table thead {
+      display: none;
+    }
+
+    .catalog-table tr {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      padding: 16px;
+    }
+
+    .catalog-table td {
+      padding: 6px 0;
+      border-bottom: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .col-id {
+      width: auto;
+    }
+
+    .col-obra {
+      margin-bottom: 6px;
+    }
+
+    .work-row:hover td {
+      background: none;
+    }
+  }
+</style>

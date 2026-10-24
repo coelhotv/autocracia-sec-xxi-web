@@ -1,0 +1,318 @@
+---
+import { getEntry, render } from 'astro:content';
+import ReaderLayout from '../layouts/ReaderLayout.astro';
+
+const matrizEntry = await getEntry('matriz', 'matriz-teorica-autocracia-tecnologia-exaustao-cognitiva');
+if (!matrizEntry) {
+  throw new Error('Documento da Matriz Teórica não encontrado na coleção.');
+}
+
+const { Content, headings } = await render(matrizEntry);
+
+// Extrai seções h2 para o sumário lateral da Matriz
+const tocItems = headings
+  .filter((h) => h.depth === 2)
+  .map((h) => ({
+    id: h.slug,
+    label: h.text,
+  }));
+
+const breadcrumbs = [
+  { label: 'Matriz Teórica' }
+];
+---
+
+<ReaderLayout
+  title="Matriz Teórica Integral — Autocracia, Tecnologia e Exaustão Cognitiva"
+  description="Matriz teórica completa estruturada em 7 eixos por Antonio Coelho: dominação psíquica, material e institucional."
+  breadcrumbs={breadcrumbs}
+  tocItems={tocItems}
+>
+  <div class="matriz-container">
+    <!-- Cabeçalho Editorial da Matriz -->
+    <header class="matriz-header">
+      <div class="matriz-badge-strip">
+        <span class="badge-eixo">Documento Integrador</span>
+        <span>Versão 5 · Outubro 2026</span>
+        <span>•</span>
+        <span>69 Fichas de Estudo</span>
+      </div>
+
+      <h1 class="matriz-main-title">Matriz Teórica</h1>
+      <p class="matriz-subtitle">
+        Autocracia, Tecnologia e Exaustão Cognitiva — Dominação Psíquica, Material e Institucional
+      </p>
+
+      <div class="matriz-meta-card">
+        <div class="meta-card-item">
+          <span class="label">Autor:</span>
+          <strong>Antonio Coelho</strong>
+        </div>
+        <div class="meta-card-item">
+          <span class="label">Escopo:</span>
+          <strong>7 Eixos Temáticos</strong>
+        </div>
+        <div class="meta-card-item">
+          <span class="label">Dados Eleitorais:</span>
+          <strong>1º Turno 2026</strong>
+        </div>
+        <div class="meta-card-item">
+          <span class="label">Formato:</span>
+          <strong>Ensaio Crítico + Corpus Empírico</strong>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo Integral com Callouts, Tabelas e Diagramas -->
+    <article class="matriz-prose">
+      <Content />
+    </article>
+
+    <!-- Rodapé de Ação -->
+    <footer class="matriz-footer">
+      <div class="footer-box">
+        <h3>Explorar as Obras Fichadas</h3>
+        <p>Acesse o catálogo completo com as 69 fichas analíticas detalhadas.</p>
+        <a href="/obras" class="btn-catalogo">Ir para o Catálogo de Obras →</a>
+      </div>
+    </footer>
+  </div>
+</ReaderLayout>
+
+<style is:global>
+  /* Esconde o h1 original do markdown pois foi recriado no cabeçalho editorial */
+  .matriz-prose h1:first-of-type {
+    display: none;
+  }
+
+  .matriz-header {
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .matriz-badge-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .matriz-main-title {
+    font-family: var(--font-serif);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  .matriz-subtitle {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    line-height: 1.45;
+    color: var(--ink-secondary);
+    font-style: italic;
+    margin-bottom: 24px;
+    max-width: 62ch;
+  }
+
+  .matriz-meta-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+    background-color: var(--bg-inset);
+    padding: 14px 18px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    border: 1px solid var(--border-subtle);
+  }
+
+  .meta-card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .meta-card-item .label {
+    color: var(--ink-muted);
+  }
+
+  .meta-card-item strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* Hierarquia de Títulos na Prosa da Matriz */
+  .matriz-prose h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    margin-top: 56px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .matriz-prose h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+
+  .matriz-prose h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    color: var(--ink-secondary);
+  }
+
+  /* Tabelas Analíticas e Responsividade */
+  .matriz-prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 28px 0;
+    font-size: 0.92rem;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .matriz-prose th {
+    background-color: var(--bg-inset);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-weight: 600;
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+
+  .matriz-prose td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border-subtle);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  .matriz-prose tr:last-child td {
+    border-bottom: none;
+  }
+
+  .matriz-prose tr:hover td {
+    background-color: var(--bg-inset);
+  }
+
+  /* Listas e Parágrafos */
+  .matriz-prose ul, .matriz-prose ol {
+    margin: 16px 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .matriz-prose li {
+    line-height: var(--lh-body);
+  }
+
+  /* Blocos de Código / Diagramas ASCII */
+  .matriz-prose pre {
+    background-color: var(--bg-inset);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    overflow-x: auto;
+    margin: 24px 0;
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  /* Links Wikilink em Destaque */
+  .wikilink {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-border);
+    text-underline-offset: 3px;
+    transition: all 0.15s ease;
+  }
+
+  .wikilink:hover {
+    color: var(--ink);
+    text-decoration-color: var(--ink);
+  }
+
+  /* Rodapé da Matriz */
+  .matriz-footer {
+    margin-top: 64px;
+    padding-top: 36px;
+    border-top: 1px solid var(--border);
+  }
+
+  .footer-box {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 32px;
+    text-align: center;
+  }
+
+  .footer-box h3 {
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+
+  .footer-box p {
+    color: var(--ink-secondary);
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  .btn-catalogo {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #FFFFFF;
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+  }
+
+  .btn-catalogo:hover {
+    opacity: 0.9;
+    color: #FFFFFF;
+  }
+
+  @media (max-width: 768px) {
+    .matriz-main-title {
+      font-size: 2.3rem;
+    }
+    .matriz-subtitle {
+      font-size: 1.15rem;
+    }
+  }
+</style>

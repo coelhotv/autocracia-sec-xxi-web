@@ -1,0 +1,176 @@
+/**
+ * TOKENS DE DESIGN EDITORIAL — AUTOCRACIA NO SÉCULO XXI
+ * Foco em leitura imersiva (deep reading), contraste térmico e hierarquia sóbria.
+ */
+
+:root {
+  /* ========================================================================
+     1. SUPERFÍCIES & CONTRASTES TÉRMICOS (TEMA CLARO: WARM PAPER)
+     ======================================================================== */
+  --bg-page: #F8F6F1;             /* Papel aquecido/natural */
+  --bg-card: #FFFFFF;             /* Superfície pura para cartões e caixas */
+  --bg-inset: #F0EDE5;            /* Superfície rebaixada para metadados/código */
+  --ink: #1C2128;                 /* Carvão profundo (elimina contraste agressivo de #000) */
+  --ink-secondary: #48505E;       /* Texto secundário e apoios explicativos */
+  --ink-muted: #6C7687;           /* Metadados, datas, notas marginais */
+  --border: #E2DFD6;              /* Divisores estruturais */
+  --border-subtle: #ECE9E1;       /* Linhas suaves e grades */
+
+  /* ========================================================================
+     2. CORES SEMÂNTICAS DOS 7 EIXOS TEMÁTICOS (AUSTEROS & DESSATURADOS)
+     ======================================================================== */
+  /* Eixo 1 · Raízes Psíquicas (Terracota) */
+  --eixo-1: #8E3027;
+  --eixo-1-tint: #F7EBEA;
+  --eixo-1-border: #E8BFBB;
+
+  /* Eixo 2 · Base Material (Âmbar Queimado) */
+  --eixo-2: #A06316;
+  --eixo-2-tint: #FAF2E6;
+  --eixo-2-border: #ECD8B8;
+
+  /* Eixo 3 · Moral, Gênero e Religião (Púrpura Ardósia) */
+  --eixo-3: #5A3E72;
+  --eixo-3-tint: #F3EFF7;
+  --eixo-3-border: #D8CCE2;
+
+  /* Eixo 4 · Tecnologia e Mídia (Azul Marinho Profundo) */
+  --eixo-4: #204068;
+  --eixo-4-tint: #EBF1F7;
+  --eixo-4-border: #C4D5E5;
+
+  /* Eixo 5 · Instituições e Coerção (Cinza Grafite) */
+  --eixo-5: #3B424D;
+  --eixo-5-tint: #EDEFF2;
+  --eixo-5-border: #C9CED6;
+
+  /* Eixo 6 · Brasil e Política Aplicada (Verde Florestal) */
+  --eixo-6: #1B5B3E;
+  --eixo-6-tint: #EBF4F0;
+  --eixo-6-border: #BCD8CB;
+
+  /* Eixo 7 · Saídas e Resistência (Ocre Dourado) */
+  --eixo-7: #7A5818;
+  --eixo-7-tint: #F8F4EA;
+  --eixo-7-border: #E4D8BA;
+
+  /* Acento padrão do site */
+  --accent: var(--eixo-1);
+  --accent-tint: var(--eixo-1-tint);
+  --accent-border: var(--eixo-1-border);
+
+  /* ========================================================================
+     3. TIPOGRAFIA & RITMO
+     ======================================================================== */
+  --font-serif: "Newsreader", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", Menlo, Consolas, "Courier New", monospace;
+
+  /* Escala de leitura de prosa */
+  --text-body: 1.14rem;       /* ~18.2px no desktop */
+  --text-body-mobile: 1.05rem;/* ~16.8px no mobile */
+  --lh-body: 1.72;            /* Entrelinha relaxada para deep reading */
+  --measure: 68ch;            /* Largura ótima de leitura */
+
+  /* Espaçamentos e Geometria */
+  --header-height: 58px;
+  --scroll-offset: 80px;      /* Altura do header + respiro visual de 22px */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+/* ==========================================================================
+   TEMA ESCURO (SLATE GRAFITE / NIGHT STUDY)
+   ========================================================================== */
+[data-theme="dark"] {
+  --bg-page: #13161B;
+  --bg-card: #181C23;
+  --bg-inset: #1F242D;
+  --ink: #E3E6ED;
+  --ink-secondary: #A6AFBE;
+  --ink-muted: #747E90;
+  --border: #282E3A;
+  --border-subtle: #202530;
+
+  --eixo-1: #E06C60;
+  --eixo-1-tint: #2C1A18;
+  --eixo-1-border: #4D2622;
+
+  --eixo-2: #E8A34A;
+  --eixo-2-tint: #2E2114;
+  --eixo-2-border: #52391E;
+
+  --eixo-3: #B092CE;
+  --eixo-3-tint: #23192C;
+  --eixo-3-border: #433054;
+
+  --eixo-4: #6FA2D6;
+  --eixo-4-tint: #162436;
+  --eixo-4-border: #263E5C;
+
+  --eixo-5: #A2ABB8;
+  --eixo-5-tint: #1E2228;
+  --eixo-5-border: #353C47;
+
+  --eixo-6: #58B48B;
+  --eixo-6-tint: #14281E;
+  --eixo-6-border: #214735;
+
+  --eixo-7: #D8B058;
+  --eixo-7-tint: #2A2312;
+  --eixo-7-border: #4A3C1E;
+
+  --accent: var(--eixo-1);
+  --accent-tint: var(--eixo-1-tint);
+  --accent-border: var(--eixo-1-border);
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-page: #13161B;
+    --bg-card: #181C23;
+    --bg-inset: #1F242D;
+    --ink: #E3E6ED;
+    --ink-secondary: #A6AFBE;
+    --ink-muted: #747E90;
+    --border: #282E3A;
+    --border-subtle: #202530;
+
+    --eixo-1: #E06C60;
+    --eixo-1-tint: #2C1A18;
+    --eixo-1-border: #4D2622;
+
+    --eixo-2: #E8A34A;
+    --eixo-2-tint: #2E2114;
+    --eixo-2-border: #52391E;
+
+    --eixo-3: #B092CE;
+    --eixo-3-tint: #23192C;
+    --eixo-3-border: #433054;
+
+    --eixo-4: #6FA2D6;
+    --eixo-4-tint: #162436;
+    --eixo-4-border: #263E5C;
+
+    --eixo-5: #A2ABB8;
+    --eixo-5-tint: #1E2228;
+    --eixo-5-border: #353C47;
+
+    --eixo-6: #58B48B;
+    --eixo-6-tint: #14281E;
+    --eixo-6-border: #214735;
+
+    --eixo-7: #D8B058;
+    --eixo-7-tint: #2A2312;
+    --eixo-7-border: #4A3C1E;
+
+    --accent: var(--eixo-1);
+    --accent-tint: var(--eixo-1-tint);
+    --accent-border: var(--eixo-1-border);
+
+    color-scheme: dark;
+  }
+}

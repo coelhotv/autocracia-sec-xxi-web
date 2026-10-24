@@ -1,0 +1,342 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import WikilinkPreview from '../components/WikilinkPreview.astro';
+
+interface TocItem {
+  id: string;
+  label: string;
+}
+
+interface WorkMeta {
+  id: string;
+  obra: string;
+  autor: string;
+  ano: number | string;
+  eixo: string;
+  tipo: string;
+  papel?: string;
+  confianca?: string;
+  tempoLeitura?: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+  breadcrumbs?: Array<{ label: string; href?: string }>;
+  workMeta?: WorkMeta;
+  tocItems?: TocItem[];
+}
+
+const {
+  title,
+  description,
+  breadcrumbs = [],
+  workMeta,
+  tocItems = []
+} = Astro.props;
+---
+
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs}>
+  <!-- Barra de progresso de leitura fixa -->
+  <div class="reading-progress-bar" id="readingProgressBar" aria-hidden="true"></div>
+
+  <div class="study-layout">
+    <!-- Coluna de Leitura Centralizada (68ch) -->
+    <article class="reading-col">
+      {workMeta && (
+        <header class="work-header">
+          <div class="work-eyebrow">
+            <span class="badge-eixo">{workMeta.eixo}</span>
+            <span>ID: {workMeta.id}</span>
+            <span>•</span>
+            <span>Ano: {workMeta.ano}</span>
+          </div>
+
+          <h1 class="work-title">{workMeta.obra}</h1>
+          <div class="work-author">
+            <strong>{workMeta.autor}</strong>
+          </div>
+
+          <div class="meta-strip">
+            <div class="meta-item"><span>Tipo:</span> <strong>{workMeta.tipo}</strong></div>
+            {workMeta.papel && (
+              <div class="meta-item"><span>Papel:</span> <strong>{workMeta.papel}</strong></div>
+            )}
+            {workMeta.confianca && (
+              <div class="meta-item"><span>Confiança:</span> <strong>{workMeta.confianca}</strong></div>
+            )}
+            {workMeta.tempoLeitura && (
+              <div class="meta-item"><span>Leitura:</span> <strong>{workMeta.tempoLeitura}</strong></div>
+            )}
+          </div>
+        </header>
+      )}
+
+      <div class="prose-body">
+        <slot />
+      </div>
+    </article>
+
+    <!-- Sidebar com Sumário e ScrollSpy -->
+    {tocItems.length > 0 && (
+      <aside class="sticky-toc" aria-label="Sumário da Leitura">
+        <div class="toc-title">Seções</div>
+        <ul class="toc-nav" id="tocNav">
+          {tocItems.map((item, idx) => (
+            <li>
+              <a href={`#${item.id}`} class={idx === 0 ? 'active' : ''}>
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <div class="toc-footer">
+          <div>Atalho: <kbd>Cmd + F</kbd></div>
+          <div><a href="#main-content" id="backToTopBtn">↑ Voltar ao topo</a></div>
+        </div>
+      </aside>
+    )}
+  </div>
+
+  <!-- Componente de Prévia Flutuante de Wikilinks -->
+  <WikilinkPreview />
+
+  <!-- Scripts: Barra de Progresso e ScrollSpy -->
+  <script>
+    // 1. Barra de progresso de leitura
+    const progressBar = document.getElementById('readingProgressBar');
+    if (progressBar) {
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progressBar.style.width = `${progress}%`;
+      }, { passive: true });
+    }
+
+    // 2. ScrollSpy com IntersectionObserver
+    const navLinks = document.querySelectorAll<HTMLAnchorElement>('#tocNav a');
+    const sections = Array.from(navLinks).map(link => {
+      const href = link.getAttribute('href');
+      return href ? document.querySelector(href) : null;
+    }).filter(Boolean);
+
+    if (sections.length > 0) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, {
+        rootMargin: '-10% 0px -75% 0px'
+      });
+
+      sections.forEach(sec => {
+        if (sec) observer.observe(sec);
+      });
+    }
+
+    // 3. Voltar ao topo suave
+    document.getElementById('backToTopBtn')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+  <style>
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--accent);
+      width: 0%;
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    .study-layout {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .reading-col {
+      max-width: var(--measure);
+    }
+
+    .work-header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+    }
+
+    .work-eyebrow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-eixo {
+      background-color: var(--accent-tint);
+      border: 1px solid var(--accent-border);
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-weight: 500;
+    }
+
+    .work-title {
+      font-family: var(--font-serif);
+      font-size: 2.85rem;
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .work-author {
+      font-family: var(--font-sans);
+      font-size: 1.15rem;
+      color: var(--ink-secondary);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    .work-author strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .meta-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      background-color: var(--bg-inset);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .meta-item strong {
+      color: var(--ink-secondary);
+      font-weight: 500;
+    }
+
+    .sticky-toc {
+      position: sticky;
+      top: 80px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px 22px;
+      font-family: var(--font-sans);
+    }
+
+    .toc-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      color: var(--ink-muted);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .toc-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      list-style: none;
+      font-size: 0.88rem;
+    }
+
+    .toc-nav a {
+      color: var(--ink-secondary);
+      text-decoration: none;
+      display: block;
+      padding: 3px 0;
+      transition: color 0.15s;
+    }
+
+    .toc-nav a:hover {
+      color: var(--accent);
+    }
+
+    .toc-nav a.active {
+      color: var(--accent);
+      font-weight: 600;
+      padding-left: 6px;
+      border-left: 2px solid var(--accent);
+    }
+
+    .toc-footer {
+      margin-top: 20px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--ink-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .toc-footer a {
+      color: var(--ink-secondary);
+      text-decoration: none;
+    }
+
+    .toc-footer a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 960px) {
+      .study-layout {
+        grid-template-columns: 1fr;
+        padding-top: 24px;
+      }
+
+      .sticky-toc {
+        display: none;
+      }
+
+      .work-title {
+        font-size: 2.2rem;
+      }
+
+      .reading-col {
+        max-width: 100%;
+      }
+    }
+  </style>
+</BaseLayout>

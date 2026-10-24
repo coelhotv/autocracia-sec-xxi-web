@@ -1,0 +1,218 @@
+---
+import { getCollection } from 'astro:content';
+
+const fichas = await getCollection('fichas');
+
+// Constrói mapa compacto slug -> resumo da obra
+const previewMap: Record<string, { id: string; obra: string; autor: string; ano: string; eixo: string; papel: string }> = {};
+
+fichas.forEach((ficha) => {
+  const eixoNum = ficha.data.id.split('.')[0];
+  previewMap[ficha.id] = {
+    id: ficha.data.id,
+    obra: ficha.data.obra,
+    autor: ficha.data.autor,
+    ano: ficha.data.ano,
+    eixo: `Eixo ${eixoNum}`,
+    papel: ficha.data.papel === 'contraponto' ? 'Contraponto' : 'Tese',
+  };
+});
+---
+
+<!-- Elemento flutuante de Preview (Hover card desktop / Bottom sheet mobile) -->
+<div id="wikilinkPreviewCard" class="wikilink-preview-card" aria-hidden="true" role="tooltip">
+  <div class="preview-badge-strip">
+    <span id="previewEixo" class="badge-eixo">Eixo</span>
+    <span id="previewId" class="badge-id">ID</span>
+    <span id="previewPapel" class="badge-papel">Tese</span>
+  </div>
+  <h4 id="previewTitle" class="preview-title">Título da Obra</h4>
+  <div id="previewAuthorYear" class="preview-author">Autor (Ano)</div>
+  <div class="preview-tip">Clique para ler a ficha completa →</div>
+</div>
+
+<!-- Serialização segura do mapa JSON no client -->
+<script is:inline define:vars={{ previewMap }}>
+  window.__WIKILINK_PREVIEWS__ = previewMap;
+</script>
+
+<script>
+  (function() {
+    const previewCard = document.getElementById('wikilinkPreviewCard');
+    const previewEixo = document.getElementById('previewEixo');
+    const previewId = document.getElementById('previewId');
+    const previewPapel = document.getElementById('previewPapel');
+    const previewTitle = document.getElementById('previewTitle');
+    const previewAuthorYear = document.getElementById('previewAuthorYear');
+
+    if (!previewCard) return;
+
+    const dataMap = (window as any).__WIKILINK_PREVIEWS__ || {};
+    let hideTimeout: number | undefined;
+
+    function extractSlug(link: HTMLAnchorElement): string | null {
+      const dataSlug = link.getAttribute('data-slug');
+      if (dataSlug) return dataSlug;
+      const href = link.getAttribute('href') || '';
+      const match = href.match(/\/obras\/([^#?]+)/);
+      return match ? match[1] : null;
+    }
+
+    function showPreview(targetLink: HTMLAnchorElement) {
+      clearTimeout(hideTimeout);
+      const slug = extractSlug(targetLink);
+      if (!slug || !dataMap[slug]) {
+        previewCard.classList.remove('is-visible');
+        return;
+      }
+
+      const info = dataMap[slug];
+      if (previewEixo) previewEixo.textContent = info.eixo;
+      if (previewId) previewId.textContent = `ID ${info.id}`;
+      if (previewPapel) {
+        previewPapel.textContent = info.papel;
+        previewPapel.className = `badge-papel ${info.papel.toLowerCase()}`;
+      }
+      if (previewTitle) previewTitle.textContent = info.obra;
+      if (previewAuthorYear) previewAuthorYear.textContent = `${info.autor} (${info.ano})`;
+
+      // Posicionamento inteligente no desktop
+      const rect = targetLink.getBoundingClientRect();
+      const cardWidth = 320;
+      let left = rect.left + window.scrollX;
+      let top = rect.bottom + window.scrollY + 8;
+
+      // Ajusta se vazar à direita
+      if (left + cardWidth > window.innerWidth - 20) {
+        left = window.innerWidth - cardWidth - 20;
+      }
+      if (left < 16) left = 16;
+
+      previewCard.style.left = `${left}px`;
+      previewCard.style.top = `${top}px`;
+      previewCard.classList.add('is-visible');
+      previewCard.setAttribute('aria-hidden', 'false');
+    }
+
+    function hidePreview() {
+      hideTimeout = window.setTimeout(() => {
+        previewCard.classList.remove('is-visible');
+        previewCard.setAttribute('aria-hidden', 'true');
+      }, 200);
+    }
+
+    // Delegação de eventos no documento para links com classe .wikilink
+    document.addEventListener('mouseover', (e) => {
+      const target = (e.target as HTMLElement)?.closest('a.wikilink') as HTMLAnchorElement | null;
+      if (target) {
+        showPreview(target);
+      }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+      const target = (e.target as HTMLElement)?.closest('a.wikilink');
+      if (target) {
+        hidePreview();
+      }
+    });
+
+    // Mantém aberto se o usuário passar o mouse no próprio card
+    previewCard.addEventListener('mouseover', () => clearTimeout(hideTimeout));
+    previewCard.addEventListener('mouseout', hidePreview);
+  })();
+</script>
+
+<style>
+  .wikilink-preview-card {
+    position: absolute;
+    z-index: 1000;
+    width: 320px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+    pointer-events: none;
+    font-family: var(--font-sans);
+  }
+
+  .wikilink-preview-card.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .preview-badge-strip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    margin-bottom: 8px;
+  }
+
+  .badge-eixo {
+    background-color: var(--accent-tint);
+    border: 1px solid var(--accent-border);
+    color: var(--accent);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+  }
+
+  .badge-id {
+    color: var(--ink-muted);
+  }
+
+  .badge-papel {
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    text-transform: lowercase;
+  }
+
+  .badge-papel.contraponto {
+    background-color: var(--accent-tint);
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .badge-papel.tese {
+    background-color: var(--bg-inset);
+    color: var(--ink-secondary);
+  }
+
+  .preview-title {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .preview-author {
+    font-size: 0.88rem;
+    color: var(--ink-secondary);
+    margin-bottom: 12px;
+  }
+
+  .preview-tip {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    border-top: 1px dashed var(--border);
+    padding-top: 8px;
+  }
+
+  @media (max-width: 768px) {
+    /* No mobile, o link abre diretamente a página ou não polui a tela */
+    .wikilink-preview-card {
+      display: none;
+    }
+  }
+</style>

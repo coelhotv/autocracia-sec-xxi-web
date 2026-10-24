@@ -1,0 +1,22 @@
+{
+  "name": "autocracia-sec-xxi-web",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sync": "node scripts/sync-vault.mjs",
+    "predev": "node scripts/sync-vault.mjs",
+    "prebuild": "node scripts/sync-vault.mjs",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

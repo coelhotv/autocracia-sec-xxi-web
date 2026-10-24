@@ -1,0 +1,532 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const fichas = await getCollection('fichas');
+const totalObras = fichas.length;
+
+const eixos = [
+  {
+    num: 1,
+    nome: "Raízes psíquicas",
+    pergunta: "Por que pessoas abrem mão da liberdade?",
+    autores: "Fromm, Polanyi, Arendt, Safatle, Reich",
+    cor: "var(--eixo-1)",
+    tint: "var(--eixo-1-tint)",
+    border: "var(--eixo-1-border)",
+    total: fichas.filter(f => f.data.id.startsWith('1.')).length,
+  },
+  {
+    num: 2,
+    nome: "Base material",
+    pergunta: "Como o desgaste do tempo, do corpo e do cuidado prepara o terreno?",
+    autores: "Federici, Rosa, Crary, Mullainathan & Shafir, Brown, Fraser",
+    cor: "var(--eixo-2)",
+    tint: "var(--eixo-2-tint)",
+    border: "var(--eixo-2-border)",
+    total: fichas.filter(f => f.data.id.startsWith('2.')).length,
+  },
+  {
+    num: 3,
+    nome: "Moral, gênero e religião",
+    pergunta: "Como o medo se torna combustível político?",
+    autores: "Butler, Lamont, Stenner, Hochschild, Segato, Spyer, Mariano, Almeida",
+    cor: "var(--eixo-3)",
+    tint: "var(--eixo-3-tint)",
+    border: "var(--eixo-3-border)",
+    total: fichas.filter(f => f.data.id.startsWith('3.')).length,
+  },
+  {
+    num: 4,
+    nome: "Mente e tecnologia",
+    pergunta: "Como a mediação algorítmica captura e exaure a atenção pública?",
+    autores: "Postman, Fisher, Han, Zuboff, Empoli, Campos Mello, Cesarino, DiResta",
+    cor: "var(--eixo-4)",
+    tint: "var(--eixo-4-tint)",
+    border: "var(--eixo-4-border)",
+    total: fichas.filter(f => f.data.id.startsWith('4.')).length,
+  },
+  {
+    num: 5,
+    nome: "Instituições e coerção",
+    pergunta: "Como o controle se capilariza antes de se converter em regime?",
+    autores: "Adorno, Foucault",
+    cor: "var(--eixo-5)",
+    tint: "var(--eixo-5-tint)",
+    border: "var(--eixo-5-border)",
+    total: fichas.filter(f => f.data.id.startsWith('5.')).length,
+  },
+  {
+    num: 6,
+    nome: "Brasil e política aplicada",
+    pergunta: "Como esse circuito se materializou na história brasileira recente?",
+    autores: "Jessé Souza, Singer, Feltran, Pinheiro-Machado, Nobre, Nicolau, Paes Manso",
+    cor: "var(--eixo-6)",
+    tint: "var(--eixo-6-tint)",
+    border: "var(--eixo-6-border)",
+    total: fichas.filter(f => f.data.id.startsWith('6.')).length,
+  },
+  {
+    num: 7,
+    nome: "Saídas e resistência",
+    pergunta: "Quais freios institucionais e respostas teóricas restam à democracia?",
+    autores: "Zakaria, Bermeo, Müller, Levitsky & Ziblatt, Applebaum, Guriev & Treisman",
+    cor: "var(--eixo-7)",
+    tint: "var(--eixo-7-tint)",
+    border: "var(--eixo-7-border)",
+    total: fichas.filter(f => f.data.id.startsWith('7.')).length,
+  },
+];
+---
+
+<BaseLayout
+  title="Autocracia, Tecnologia e Exaustão Cognitiva — Matriz Teórica e Fichas de Estudo"
+  description="Plataforma de estudos sociológicos e teoria política sobre a ascensão da autocracia eleitoral no século XXI por Antonio Coelho."
+>
+  <div class="home-container">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-badge">Investigação Sociológica & Teoria Crítica · Outubro 2026</div>
+      <h1 class="hero-title">Autocracia, Tecnologia e Exaustão Cognitiva</h1>
+      <p class="hero-subtitle">
+        Dominação psíquica, material e institucional: uma investigação sobre como sociedades cansadas, isoladas e hiperconectadas elegem a própria perda de liberdade.
+      </p>
+
+      <!-- Tese em Destaque Editorial -->
+      <div class="hero-thesis-card">
+        <div class="thesis-header">
+          <span class="thesis-tag">Tese Central</span>
+          <span class="thesis-author">Antonio Coelho</span>
+        </div>
+        <p class="thesis-statement">
+          A autocracia do século XXI não chega por golpe: ela é <strong>eleita por sociedades exaustas, isoladas e com medo</strong>. Mas exaustão, isolamento e medo são apenas <em>disposições</em>. A autocracia vence quando essas disposições são <strong>ativadas</strong> pela conjuntura, <strong>organizadas</strong> por veículos algorítmicos e redes afetivas, e <strong>convertidas</strong> em voto por uma oferta política que encontra freios institucionais enfraquecidos.
+        </p>
+      </div>
+
+      <!-- Ações Principais -->
+      <div class="hero-cta-group">
+        <a href="/matriz" class="btn btn-primary">Ler a Matriz Teórica Integral →</a>
+        <a href="/obras" class="btn btn-secondary">Explorar Catálogo ({totalObras} Obras)</a>
+      </div>
+    </section>
+
+    <!-- OS 4 ESTÁGIOS CAUSAIS -->
+    <section class="funnel-section">
+      <h2 class="section-heading">O Mecanismo Causal em Quatro Estágios</h2>
+      <div class="funnel-grid">
+        <div class="funnel-card">
+          <span class="funnel-step">01</span>
+          <h3>Disposição</h3>
+          <p>Desgaste do tempo, precarização do trabalho (escala 6x1, uberização), solidão e medo de perda de status.</p>
+        </div>
+        <div class="funnel-card">
+          <span class="funnel-step">02</span>
+          <h3>Ativação</h3>
+          <p>Choques materiais, crises da representação política e ameaças morais percebidas no cotidiano.</p>
+        </div>
+        <div class="funnel-card">
+          <span class="funnel-step">03</span>
+          <h3>Organização</h3>
+          <p>Arquitetura de plataformas, zero-rating, canais de mensageria e validação por autoridades locais.</p>
+        </div>
+        <div class="funnel-card">
+          <span class="funnel-step">04</span>
+          <h3>Conversão</h3>
+          <p>Oferta autocrática eleitoral diante de freios institucionais, partidários e judiciais fragilizados.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA DOS 7 EIXOS -->
+    <section class="eixos-section">
+      <div class="section-header-block">
+        <h2 class="section-heading">Os Sete Eixos Temáticos</h2>
+        <p class="section-desc">
+          O corpus reúne 69 obras fundamentais da sociologia, psicanálise, economia política e teoria democrática, respondendo a sete perguntas nucleares.
+        </p>
+      </div>
+
+      <div class="eixos-grid">
+        {eixos.map((eixo) => (
+          <a
+            href={`/obras?eixo=${eixo.num}`}
+            class="eixo-card"
+            style={`--card-accent: ${eixo.cor}; --card-tint: ${eixo.tint}; --card-border: ${eixo.border};`}
+          >
+            <div class="eixo-header">
+              <span class="eixo-badge">Eixo {eixo.num}</span>
+              <span class="eixo-count">{eixo.total} fichas</span>
+            </div>
+            <h3 class="eixo-title">{eixo.nome}</h3>
+            <p class="eixo-question">"{eixo.pergunta}"</p>
+            <div class="eixo-authors">
+              <strong>Autores:</strong> {eixo.autores}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- NÚMEROS E METODOLOGIA -->
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-num">{totalObras}</span>
+          <span class="stat-label">Obras Fichadas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">7</span>
+          <span class="stat-label">Eixos Integrados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">~8 min</span>
+          <span class="stat-label">Leitura por Ficha</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">2005–2026</span>
+          <span class="stat-label">Série Empírica Brasil</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>
+
+<style>
+  .home-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 64px 24px 112px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  /* HERO */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background-color: var(--accent-tint);
+    border: 1px solid var(--accent-border);
+    padding: 4px 12px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  .hero-title {
+    font-family: var(--font-serif);
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.55;
+    color: var(--ink-secondary);
+    max-width: 66ch;
+    margin-bottom: 40px;
+  }
+
+  /* TESE CARD NA HERO */
+  .hero-thesis-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-md);
+    padding: 28px 32px;
+    text-align: left;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  }
+
+  .thesis-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .thesis-tag {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .thesis-author {
+    color: var(--ink-muted);
+  }
+
+  .thesis-statement {
+    font-size: 1.18rem;
+    line-height: 1.62;
+    color: var(--ink);
+    margin-bottom: 0;
+  }
+
+  .hero-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .btn {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: all 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-primary {
+    background-color: var(--accent);
+    color: #FFFFFF;
+    border: 1px solid var(--accent);
+  }
+
+  .btn-primary:hover {
+    opacity: 0.92;
+    color: #FFFFFF;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    background-color: var(--bg-card);
+    color: var(--ink);
+    border: 1px solid var(--border);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  /* HEADINGS GERAIS */
+  .section-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+  }
+
+  .section-header-block {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 36px;
+  }
+
+  .section-desc {
+    color: var(--ink-secondary);
+    font-size: 1.05rem;
+  }
+
+  /* 4 PASSOS */
+  .funnel-section {
+    text-align: center;
+  }
+
+  .funnel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 28px;
+    text-align: left;
+  }
+
+  .funnel-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    transition: border-color 0.15s;
+  }
+
+  .funnel-card:hover {
+    border-color: var(--accent);
+  }
+
+  .funnel-step {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .funnel-card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .funnel-card p {
+    font-size: 0.95rem;
+    color: var(--ink-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* 7 EIXOS */
+  .eixos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 22px;
+  }
+
+  .eixo-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px 26px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.15s ease;
+  }
+
+  .eixo-card:hover {
+    border-color: var(--card-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .eixo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .eixo-badge {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--card-accent);
+    background-color: var(--card-tint);
+    border: 1px solid var(--card-border);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+  }
+
+  .eixo-count {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+  }
+
+  .eixo-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .eixo-question {
+    font-size: 0.96rem;
+    font-style: italic;
+    color: var(--ink-secondary);
+    line-height: 1.45;
+  }
+
+  .eixo-authors {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+  }
+
+  .eixo-authors strong {
+    color: var(--ink-secondary);
+  }
+
+  /* STATS */
+  .stats-section {
+    border-top: 1px solid var(--border);
+    padding-top: 48px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+    text-align: center;
+  }
+
+  .stat-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+  }
+
+  .stat-num {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 768px) {
+    .home-container {
+      padding-top: 36px;
+      gap: 56px;
+    }
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+    .hero-thesis-card {
+      padding: 20px;
+    }
+    .thesis-statement {
+      font-size: 1.05rem;
+    }
+  }
+</style>
