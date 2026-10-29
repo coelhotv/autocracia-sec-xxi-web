@@ -3,9 +3,9 @@ titulo: Matriz Teórica
 subtitulo: Autocracia, Tecnologia e Exaustão Cognitiva — Dominação Psíquica, Material e Institucional
 autor: Antonio Coelho
 versao: 5
-atualizado: 2026-10-17
-dados-eleitorais: 1º turno de 2026 (coleta em 6 out 2026)
-fichas: 69
+atualizado: 2026-10-27
+dados-eleitorais: 1º e 2º turnos de 2026 (coleta em 6 e 27 out 2026)
+fichas: 73
 eixos: 7
 tags: [matriz, autocracia, tecnologia, exaustao-cognitiva, brasil]
 aliases: [Matriz Teórica]
@@ -15,7 +15,7 @@ aliases: [Matriz Teórica]
 
 **Autocracia, Tecnologia e Exaustão Cognitiva — Dominação Psíquica, Material e Institucional**
 
-*Out 2026 · Antonio Coelho · 69 fichas · dados eleitorais do 1º turno de 2026 (coleta em 6 out 2026)*
+*Out 2026 · Antonio Coelho · 73 fichas · dados eleitorais do 1º e do 2º turno de 2026 (coleta em 6 e 27 out 2026)*
 
 > [!abstract] Tese central
 > A autocracia do século XXI não chega por golpe: ela é **eleita por sociedades exaustas, isoladas e com medo**. Mas exaustão, isolamento e medo são **disposições**; sozinhas, não explicam *quando* a autocracia vence. Ela vence quando essas disposições são **ativadas** por uma conjuntura, **organizadas** por veículos (plataformas, igrejas-rede, partidos digitais, estrategistas) e **convertidas** em voto por uma oferta política que encontra os **freios** institucionais enfraquecidos.
@@ -44,7 +44,7 @@ aliases: [Matriz Teórica]
 | **2 · Base material** | Como o desgaste do tempo, do corpo e do cuidado prepara o terreno? | Federici, Rosa, Crary, Mullainathan & Shafir, Brown, Fraser | 9 |
 | **3 · Moral, gênero e religião** | Como o medo se torna combustível político? | Butler, Lamont, Stenner, Hochschild, Segato, Spyer, Mariano, Almeida, Biroli · Machado · Vaggione | 11 |
 | **4 · Mente e tecnologia** | Como a infraestrutura digital captura atenção e corrói a verdade? | Postman, Fisher, Han, Zuboff, Empoli, Campos Mello, Cesarino, DiResta, Nemer, Mercier | 13 |
-| **5 · Disciplina e formação** | Como instituições formam sujeitos obedientes? | Adorno, Foucault | 4 |
+| **5 · Disciplina e formação** | Como instituições formam sujeitos obedientes ou autônomos? | Adorno, Foucault, Altemeyer, Castro, Frigotto, Freire | 8 |
 | **6 · Brasil** | Que mediações nacionais explicam a virada autoritária? | Jessé Souza, Singer, Feltran, Pinheiro-Machado, Nobre, Lynch & Cassimiro, Caldeira, Mannheim, Nicolau, Paes Manso, Leirner, Pompeia, Nunes | 14 |
 | **7 · Desfecho institucional** | Como a democracia morre por dentro? | Zakaria, Levitsky & Way, Bermeo, Müller, Levitsky & Ziblatt, Scheppele, Svolik, Guriev & Treisman, Applebaum, Ziblatt | 12 |
 
@@ -300,7 +300,7 @@ aliases: [Matriz Teórica]
 
 ### Eixo 5 · Disciplina e formação
 
-> [!question] Como instituições formam sujeitos obedientes?
+> [!question] Como instituições formam sujeitos obedientes ou autônomos?
 
 > [!note] Theodor W. Adorno (1903–1969) · Emancipação (*Mündigkeit*) vs. heteronomia
 > **Obras.** [[5.2-adorno-educacao-apos-auschwitz|Educação após Auschwitz]] (1966); [[5.1-adorno-a-personalidade-autoritaria|A Personalidade Autoritária]] (1950) · *formativo / pedagógico*
@@ -316,8 +316,36 @@ aliases: [Matriz Teórica]
 >
 > **Mecanismo.** Fundamenta a crítica à militarização escolar: o controle de cabelos, uniformes e posturas anula a singularidade e condiciona a obediência automática. **Tensão dupla:** Han declara o paradigma disciplinar superado; no Brasil, a violência policial letal se parece mais com o suplício que com a disciplina (Caldeira).
 
+> [!note] Bob Altemeyer (1940–) · Autoritarismo de direita aprendido
+> **Obras.** [[5.8-altemeyer-the-authoritarians|The Authoritarians]] (2006) · *psicologia social / empírico*
+>
+> **Tese.** Refaz a escala de Adorno sem os vícios de método: o autoritarismo de direita (submissão à autoridade, agressão autorizada contra desviantes, convencionalismo) é aprendido na socialização familiar e religiosa, não herdado como caráter.
+>
+> **Mecanismo.** Liga o Eixo 5 a Stenner (Eixo 3): a formação produz a predisposição que a ameaça ativa. **Limite:** pesquisa norte-americana; no Brasil, a medida segue sem estudo amplo.
+
+> [!note] Celso Castro · A caserna como fábrica de identidade
+> **Obras.** [[5.6-castro-o-espirito-militar|O espírito militar]] (1990) · *etnografia / Brasil*
+>
+> **Tese.** Etnografia da Academia Militar das Agulhas Negras: a formação do cadete constrói um “nós” militar superior e separado do “paisano”, pela rotina, pela hierarquia e pelo espírito de corpo.
+>
+> **Mecanismo.** Dá ao circuito Formativo-Institucional a primeira base brasileira e explica a matriz de valores que sai da caserna para a política. **Limite:** trata a formação de oficiais, não as escolas cívico-militares nem o 8 de Janeiro.
+
+> [!note] Gaudêncio Frigotto e outros · A escola como campo de disputa
+> **Obras.** [[5.7-frigotto-escola-sem-partido|Escola “sem” partido]] (2017) · *educação / Brasil*
+>
+> **Tese.** O movimento Escola sem Partido é um projeto político que se apresenta como neutro: pretende vigiar o professor, interditar gênero e política na sala de aula e reduzir a escola à instrução.
+>
+> **Mecanismo.** Mostra a formação como **projeto** do campo autoritário (o que o aviso abaixo já indica) e a liga ao pânico moral do Eixo 3 (Butler). **Limite:** coletânea militante; mede o projeto, não seu efeito sobre o aluno.
+
+> [!note] Paulo Freire (1921–1997) · Educação bancária e conscientização · contraponto
+> **Obras.** [[5.5-freire-pedagogia-do-oprimido|Pedagogia do Oprimido]] (1968) · *pedagógico / Brasil*
+>
+> **Tese.** A educação bancária deposita conteúdo num aluno passivo e reproduz a relação opressor-oprimido; a educação dialógica parte da experiência do oprimido e produz consciência crítica.
+>
+> **Mecanismo.** É o par brasileiro de Adorno (heteronomia × *Mündigkeit*) e explica a formação do sujeito que se mobiliza, como os estudantes que abrem os atos do 2º turno de 2026 (§5.5). **Limite:** obra normativa; não mostra quando a conscientização vira voto nem por que o oprimido adere ao opressor, ponto que o próprio Freire reconhece (o opressor “hospedado”).
+
 > [!warning] Elo mais fraco da matriz
-> O Eixo 5 é o único sustentado só por teoria normativa, sem ficha empírica sobre o caso brasileiro. O programa federal de escolas cívico-militares é de 2019 (encerrado em 2023; segue em programas estaduais), posterior à formação política de quem votou em 2018. A militarização escolar é, portanto, **efeito e projeto** do campo autoritário mais do que causa demonstrada. Trate o circuito Formativo-Institucional como hipótese (§3).
+> O Eixo 5 tem a base brasileira mais recente da matriz (Castro, Frigotto, Freire) e nenhuma obra que meça o efeito da formação sobre o voto. O programa federal de escolas cívico-militares é de 2019 (encerrado em 2023; segue em programas estaduais), posterior à formação política de quem votou em 2018. A militarização escolar é, portanto, **efeito e projeto** do campo autoritário mais do que causa demonstrada. Trate o circuito Formativo-Institucional como hipótese (§3).
 
 ### Eixo 6 · Brasil: como chegamos aqui
 
@@ -718,13 +746,13 @@ O modelo é forte como mapa, mas tende a **superestimar o poder das plataformas*
 - Os freios institucionais e externos (STF, TSE, pressão internacional).
 
 > [!question] Pergunta de controle
-> O mesmo ecossistema digital estava ativo em 2022, quando o candidato autocrata perdeu, e em 2026, quando o campo bolsonarista liderou o 1º turno e ampliou sua força no Senado. Um bom modelo precisa explicar essa variação. Na arquitetura da v4, as disposições (①) e os veículos (④) são quase constantes entre as duas eleições; a variação tem de vir da **ativação** (③: conjuntura econômica, pauta de segurança, a condenação de 2025 lida como martírio), da **conversão** (⑤: troca de candidato, colapso do centro, voto útil) e dos **freios** (inelegibilidade, condenação, regulação das apostas). O 2º turno de 25 out 2026 é o teste.
+> O mesmo ecossistema digital estava ativo em 2022, quando o candidato autocrata perdeu, e em 2026, quando o campo bolsonarista liderou o 1º turno, ampliou sua força no Senado e perdeu o 2º turno. Um bom modelo precisa explicar essa variação. As disposições (①) e os veículos (④) são quase constantes: a base autoritária de 2026 é maior que a de 2022. A variação vem da **ativação assimétrica** (③): no 1º turno, a vontade de punir um governo mal avaliado mobiliza a direita, enquanto o governista se acomoda; no 2º, o medo do “mal maior” e a aprovação recuperada levam às urnas quem tinha faltado. A mobilização é relativa e responde ao placar percebido, inclusive ao que as pesquisas publicam (§5.5). Conversão (⑤) e freios completam o quadro, mas o fiel da balança é quem comparece.
 
 ---
 
 ## 5. Aplicação ao Brasil · da mancha ao Congresso de 2027
 
-Esta seção aplica a matriz à trajetória brasileira recente, registrando **fatos e o eixo que eles reforçam**. Os resultados de 2026 são do 1º turno (4 out 2026), com **100% das urnas apuradas** (g1 e Poder360, com dados do TSE), coletados em 6 out 2026.
+Esta seção aplica a matriz à trajetória brasileira recente, registrando **fatos e o eixo que eles reforçam**. Os resultados de 2026 são do 1º turno (4 out) e do 2º turno (25 out), com **100% das urnas apuradas** (g1, Poder360 e BBC Brasil, com dados do TSE e da Quaest).
 
 ### 5.1 Linha do tempo em quatro fases
 
@@ -733,7 +761,7 @@ Esta seção aplica a matriz à trajetória brasileira recente, registrando **fa
 | **Mancha (2005–2012)** | 2005: mensalão (denúncia de Roberto Jefferson). 2006: Lula reeleito com 60,8%. 2012: STF condena a cúpula do PT na AP 470. | Eixo 6 (Singer): o voto popular troca de base; a desconfiança hiberna sob crescimento econômico. |
 | **Ruptura (2013–2016)** | 2013: Jornadas de Junho. 2014: Lava Jato; Dilma reeleita com 51,6%, a menor margem desde 1989. 2015–16: PIB −3,5% e −3,3% (IBGE, revisado). 2016: impeachment (367 votos na Câmara; 61 a 20 no Senado). | Eixos 1 e 6 (Polanyi, Nobre): a recessão reativa a mancha; o antipetismo vira identidade. **Camada ③ (ativação).** |
 | **Captura (2017–2022)** | 2017: reforma trabalhista (Lei 13.467). 2018: Lula preso; Bolsonaro eleito com 55%, com disparos em massa no WhatsApp. 2021: STF anula as condenações de Lula (8 a 3). 2022: Lula vence com 50,9%; PL elege 99 deputados. | Eixos 2 e 4 (Campos Mello, Cesarino): a direita perde o Executivo e ganha a máquina legislativa. **Camadas ④ e freios.** |
-| **Consolidação (2023–2026)** | 2023: 8 de Janeiro; TSE torna Bolsonaro inelegível (5 a 2). 2025: STF condena Bolsonaro por tentativa de golpe (27 anos e 3 meses); a anistia vira bandeira. 2026: Flávio Bolsonaro lidera o 1º turno; PL faz 121 deputados e 28 senadores. | Eixos 3 e 7 (Svolik, Müller, Scheppele): a condenação vira martírio; o Senado vira trincheira. **Camada ⑤ (conversão).** |
+| **Consolidação (2023–2026)** | 2023: 8 de Janeiro; TSE torna Bolsonaro inelegível (5 a 2). 2025: STF condena Bolsonaro por tentativa de golpe (27 anos e 3 meses); a anistia vira bandeira. 2026: Flávio Bolsonaro lidera o 1º turno; PL faz 121 deputados e 28 senadores; Lula vira no 2º turno pelo comparecimento e chega ao 4º mandato. | Eixos 3 e 7 (Svolik, Müller, Scheppele): a condenação vira martírio; o Senado vira trincheira. **Camada ⑤ (conversão).** |
 
 ### 5.2 O resultado de 2026 e o que ele reforça
 
@@ -766,6 +794,28 @@ Leitura das intenções de voto declaradas na véspera do 1º turno (Quaest/g1),
 | **A fala de Lula sobre o exame de próstata (28 set).** Num comício, Lula diz que “as mulheres aprendem a tomar toque desde quando são pequenas”. Opositores dão conotação sexual à fala; o PT diz que se referia a exames ginecológicos. | Eixo 3: pânico moral organizado em torno da proteção das crianças (Butler), pelo circuito corte → WhatsApp → validação. |
 | **A padroeira (30 set – 2 out).** Posts associam falsamente Flávio à retirada de Nossa Senhora Aparecida como padroeira; o TSE manda removê-los. Flávio e Tarcísio erguem a imagem da santa em ato. | Eixo 4: o circuito funciona nos dois sentidos, e a resposta é encenação (Postman). O ataque não pega entre católicos: a mensagem só cola quando confirma o que o eleitor já pensa (Mercier). Freios: o TSE age sobre os dois lados. |
 
+### 5.5 O 2º turno: a virada pelo comparecimento
+
+Lula vence com 51,8% dos válidos, a maior votação da história, depois de sair atrás no 1º turno. Flávio também supera a votação de Jair em 2022. A base autoritária não encolhe; o outro lado comparece.
+
+| Fato | Eixo e autor reforçados |
+| --- | --- |
+| **Mobilizar, não converter.** O ganho de Lula entre os turnos supera a soma dos votos dos eliminados; a abstenção tem a maior queda desde a redemocratização e brancos e nulos recuam. Os blocos ideológicos chegam fechados ao 2º turno; o que se move é quem estava fora. | Eixo 4: a persuasão é fraca e a mobilização de quem já concorda decide (Mercier). Contra Zuboff, as redes não convertem. |
+| **O susto como gatilho.** A derrota no 1º turno vira ato de rua (estudantes da UFF) e corrente de mensagens no dia seguinte. O medo da volta da família Bolsonaro passa o medo da reeleição de Lula. | Eixo 3: predisposição × ativação (Stenner) com o sinal trocado; a ameaça também ativa o lado democrático. |
+| **O circuito nos dois sentidos.** O canal “Exército do Lula” no WhatsApp passa de 10 milhões de inscritos; jovens deputados recordistas de voto da esquerda formam a força-tarefa digital. Ruas e redes se alimentam. | Eixo 4: o meio não tem lado (Nemer, Cesarino); a confiança parassocial também serve à esquerda (DiResta). Eixo 1: a densidade associativa volta contra a atomização (Arendt, Berman) e a ressonância reaparece (Rosa). |
+| **A pesquisa como gatilho.** As pesquisas de véspera, de métodos diferentes, dão Flávio à frente. Os modelos de eleitor provável repetem o comparecimento do 1º turno e descontam a base pobre; o favoritismo publicado alimenta a contramobilização. | Eixo 4: a medição entra no circuito que mede; o número vira combustível afetivo (Postman, Han) e o eleitor cala a opinião que julga minoritária (Noelle-Neumann, apoio). |
+| **A aprovação como voto retrospectivo.** Na véspera, a aprovação do governo volta a superar a desaprovação pela primeira vez desde agosto, e a razão entre as duas antecipa quase exatamente o resultado da urna, melhor que a intenção de voto declarada. | Eixos 1 e 2: a proteção social funciona como contramovimento (Polanyi) e a escassez orienta o julgamento da própria vida sob o governo. O mesmo mecanismo pune o governante em recessão (fase Ruptura). Base brasileira: o efeito eleitoral do Bolsa Família (Zucco, apoio); contraponto: o voto por identidade de grupo (Achen e Bartels, apoio). |
+| **A classe se divide no fim.** Nos últimos dias, a base de renda baixa se fecha com Lula e o topo de renda e de escolaridade fecha com Flávio. A renda intermediária e o ensino médio ficam com Flávio do começo ao fim: a virada vem da base e do comparecimento, não do meio. | Eixo 6: realinhamento de classe do lulismo (Singer); o batalhador mantém o ethos do mérito (Jessé Souza). |
+| **A distância de gênero.** Mulheres pendem a Lula e homens a Flávio, com distância estável e larga durante todo o 2º turno. | Eixo 3: mandato de masculinidade (Segato) e o homem humilhado (Reich). Por que as mulheres pendem a Lula segue sem obra que explique. |
+| **Geração e igreja estáveis.** Jovens seguem com Flávio, com distância menor; idosos com Lula. Evangélicos ficam com Flávio na proporção de dois para um, mas um terço vota em Lula; católicos pendem a Lula. | Eixo 6: socialização geracional (Mannheim). Eixo 3: a igreja é rede, não bloco total (Spyer). |
+| **Geografia.** O Nordeste amplia a vantagem de Lula até o teto; Minas vira e volta a espelhar o país; Sul, Sudeste e Centro-Oeste dão a Lula os maiores ganhos relativos sem mudar de lado. | Eixo 6: fila do benefício (Hochschild, Lamont) consolidada e territorialidade do voto (Nicolau). |
+| **A frente ampla no Executivo.** Alckmin, Tebet, Marina e governadores entram na coordenação final. | Eixo 7: no Executivo os guardiões funcionam (Levitsky e Ziblatt); no Senado, seguem falhando (Ziblatt). |
+| **Personalismo.** A militância se descreve como quem “corre” por um líder insubstituível. | Eixo 6: o sistema partidário pós-2013 não produz sucessão (Nobre) e o carisma não se rotiniza (Weber, apoio). A contenção depende de uma pessoa. |
+| **Contestação depois da urna.** Flávio anuncia pedido de cassação da chapa vencedora no TSE e é intimado a entregar o passaporte. | Eixo 7: a derrota no Executivo vira disputa jurídica com o Senado como trincheira (Scheppele); o teste do consentimento do perdedor (Przeworski, apoio). |
+
+> [!quote] Leitura do 2º turno
+> A autocracia é contida no Executivo por uma margem estreita, pelo comparecimento da base pobre e pela avaliação material do governo, enquanto o Legislativo fica com o polo que a organiza. A sociedade não deixa de estar disposta: ela é ativada pelos dois lados, e vence quem leva mais gente à urna.
+
 ---
 
 ## 6. Lacunas e agenda
@@ -773,9 +823,12 @@ Leitura das intenções de voto declaradas na véspera do 1º turno (Quaest/g1),
 > [!todo] O que a matriz ainda não cobre
 > - **Militares depois de 2022:** [[6.12-leirner-o-brasil-no-espectro-de-uma-guerra-hibrida|Leirner]] para em 2020; falta uma obra sobre o 8 de Janeiro e o julgamento de 2025.
 > - **Empresariado urbano e casas de apostas como atores políticos:** o agro tem [[6.13-pompeia-formacao-politica-do-agronegocio|Pompeia]]; quem financiou disparos e a economia da aposta, não.
-> - **Gênero do voto:** [[3.11-biroli-machado-vaggione-genero-neoconservadorismo-e-democracia|Biroli, Machado e Vaggione]] mostram mulheres cristãs como agentes, mas nada explica por que as mulheres deram vantagem a Lula em 2022.
+> - **Gênero do voto:** [[3.11-biroli-machado-vaggione-genero-neoconservadorismo-e-democracia|Biroli, Machado e Vaggione]] mostram mulheres cristãs como agentes, mas nada explica por que as mulheres deram vantagem a Lula em 2022 e de novo no 2º turno de 2026, nem por que os homens pendem ao outro lado.
+> - **Comparecimento e voto retrospectivo:** Samuels e Zucco, Zucco e Achen e Bartels ficam no catálogo de apoio; nenhuma ficha trata de quem vai votar.
+> - **Pesquisa como ator:** só Noelle-Neumann, no catálogo de apoio; falta obra sobre o efeito das pesquisas publicadas na mobilização brasileira.
+> - **Consentimento do perdedor e sucessão:** Przeworski e Weber ficam no catálogo de apoio; falta obra brasileira sobre a sucessão de Lula.
 > - **Mensageria:** [[4.12-nemer-technology-of-the-oppressed|Nemer]] estudou poucos grupos; falta um estudo amplo do WhatsApp e do Telegram depois de 2022.
-> - **Eixo 5 sem base brasileira:** nenhuma obra mede o efeito das escolas cívico-militares.
+> - **Eixo 5 sem medida de efeito:** Castro, Frigotto e Freire dão base brasileira ao eixo, mas nenhuma obra mede o efeito das escolas cívico-militares sobre o voto.
 > - **Contrapontos fora da lista:** Doctorow e Benkler seguem no catálogo de apoio de `00-lista-de-obras.md`.
 
 ---
@@ -846,7 +899,12 @@ A ordem segue os eixos, do fundamento ao desfecho, com um contraponto em cada et
 - [ ] [[5.2-adorno-educacao-apos-auschwitz|Adorno · Educação após Auschwitz]]
 - [ ] [[5.3-foucault-vigiar-e-punir|Foucault · Vigiar e Punir]]
 - [ ] [[5.4-foucault-microfisica-do-poder|Foucault · Microfísica do Poder]]
-- *Contraponto:* Han, *Sociedade do Cansaço* (o fim da sociedade disciplinar)
+- [x] [[5.8-altemeyer-the-authoritarians|Altemeyer · The Authoritarians]]
+- [x] [[5.6-castro-o-espirito-militar|Castro · O espírito militar]]
+- [x] [[5.7-frigotto-escola-sem-partido|Frigotto (org.) · Escola “sem” partido]]
+- *Contraponto:*
+  - [x] [[5.5-freire-pedagogia-do-oprimido|Freire · Pedagogia do Oprimido]]
+  - Han, *Sociedade do Cansaço* (o fim da sociedade disciplinar)
 
 ### Etapa 6 · Brasil
 

@@ -1,6 +1,6 @@
 ---
 documento: Lista de obras
-total: 69
+total: 73
 ordem: por eixo; cronológica dentro de cada eixo (acréscimos de out/2026 entram no fim do eixo para não quebrar links existentes)
 ---
 
@@ -77,6 +77,10 @@ Legenda de status: `feito` · `pendente`. Tipo: `livro` (resumir capítulos) ou 
 | 5.2 | [[5.2-adorno-educacao-apos-auschwitz]] | Theodor W. Adorno | Educação após Auschwitz | 1966 | artigo | alta | feito |
 | 5.3 | [[5.3-foucault-vigiar-e-punir]] | Michel Foucault | Vigiar e Punir | 1975 | livro | alta | feito |
 | 5.4 | [[5.4-foucault-microfisica-do-poder]] | Michel Foucault | Microfísica do Poder | 1979 | livro | media | feito |
+| 5.5 | [[5.5-freire-pedagogia-do-oprimido]] | Paulo Freire | Pedagogia do Oprimido | 1968 | livro | alta | feito |
+| 5.6 | [[5.6-castro-o-espirito-militar]] | Celso Castro | O espírito militar | 1990 | livro | media | feito |
+| 5.7 | [[5.7-frigotto-escola-sem-partido]] | Gaudêncio Frigotto (org.) | Escola "sem" partido | 2017 | livro | media | feito |
+| 5.8 | [[5.8-altemeyer-the-authoritarians]] | Bob Altemeyer | The Authoritarians | 2006 | livro | media | feito |
 
 ## Eixo 6. Brasil
 
@@ -116,7 +120,7 @@ Legenda de status: `feito` · `pendente`. Tipo: `livro` (resumir capítulos) ou 
 
 ## Papel de contraponto
 
-Algumas fichas corrigem a tese de outro eixo com dado empírico ou etnográfico. Elas levam `papel: contraponto` no frontmatter e a marca de contraponto no cartão da matriz: 3.4 Hochschild, 3.7 Spyer, 4.13 Mercier e 6.4 Pinheiro-Machado.
+Algumas fichas corrigem a tese de outro eixo com dado empírico ou etnográfico. Elas levam `papel: contraponto` no frontmatter e a marca de contraponto no cartão da matriz: 3.4 Hochschild, 3.7 Spyer, 4.13 Mercier, 5.5 Freire e 6.4 Pinheiro-Machado.
 
 ## Catálogo de apoio
 
@@ -132,5 +136,13 @@ Obras citadas na matriz que não viram ficha. Uma linha cada, sem ID, por isso o
 | Levi Boxell, Matthew Gentzkow e Jesse Shapiro, estudo sobre polarização e internet | 2017 | 4 | a polarização cresceu mais entre quem menos usa internet |
 | Pippa Norris e Ronald Inglehart, *Cultural Backlash* | 2019 | 3 | reação cultural dos mais velhos; contrariado pela clivagem etária brasileira de 2026 |
 | Amory Gethin, Clara Martínez-Toledano e Thomas Piketty, *Political Cleavages and Social Inequalities* | 2021 | 6 | no Brasil, escolaridade se confunde com renda |
+| David Samuels e Cesar Zucco, *Partisans, Antipartisans, and Nonpartisans* | 2018 | 6 | antipetismo medido como identidade partidária negativa |
+| Cesar Zucco, "When Payouts Pay Off" | 2013 | 6 | efeito eleitoral do Bolsa Família; base da fila do benefício e do voto retrospectivo |
+| Christopher Achen e Larry Bartels, *Democracy for Realists* | 2016 | 7 | contraponto: voto por identidade de grupo e punição cega do governante |
+| Elisabeth Noelle-Neumann, *A espiral do silêncio* | 1980 | 4 | o eleitor cala a opinião que julga minoritária; a pesquisa como ator |
+| Adam Przeworski, *Crises da democracia* | 2019 | 7 | democracia é perder eleições; o risco do perdedor que não consente |
+| Lilliana Mason, *Uncivil Agreement* | 2018 | 7 | polarização afetiva e identidades empilhadas |
+| Pippa Norris e Ronald Inglehart, *Rising Tide* | 2003 | 3 | a virada das mulheres à esquerda; ponto de partida para o gênero do voto |
+| Max Weber, rotinização do carisma (*Economia e Sociedade*) | 1922 | 6 | sucessão de um líder insubstituível |
 
 Nota sobre 6.8: Mannheim é teoria geral, mas fica no Eixo 6 porque entrou na matriz para explicar a clivagem geracional do voto brasileiro em 2026.
