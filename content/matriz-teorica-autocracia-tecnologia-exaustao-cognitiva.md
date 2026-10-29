@@ -2,10 +2,10 @@
 titulo: Matriz Teórica
 subtitulo: Autocracia, Tecnologia e Exaustão Cognitiva — Dominação Psíquica, Material e Institucional
 autor: Antonio Coelho
-versao: 5
-atualizado: 2026-10-27
+versao: 6
+atualizado: 2026-10-29
 dados-eleitorais: 1º e 2º turnos de 2026 (coleta em 6 e 27 out 2026)
-fichas: 73
+fichas: 83
 eixos: 7
 tags: [matriz, autocracia, tecnologia, exaustao-cognitiva, brasil]
 aliases: [Matriz Teórica]
@@ -15,7 +15,7 @@ aliases: [Matriz Teórica]
 
 **Autocracia, Tecnologia e Exaustão Cognitiva — Dominação Psíquica, Material e Institucional**
 
-*Out 2026 · Antonio Coelho · 73 fichas · dados eleitorais do 1º e do 2º turno de 2026 (coleta em 6 e 27 out 2026)*
+*Out 2026 · Antonio Coelho · 83 fichas · dados eleitorais do 1º e do 2º turno de 2026 (coleta em 6 e 27 out 2026)*
 
 > [!abstract] Tese central
 > A autocracia do século XXI não chega por golpe: ela é **eleita por sociedades exaustas, isoladas e com medo**. Mas exaustão, isolamento e medo são **disposições**; sozinhas, não explicam *quando* a autocracia vence. Ela vence quando essas disposições são **ativadas** por uma conjuntura, **organizadas** por veículos (plataformas, igrejas-rede, partidos digitais, estrategistas) e **convertidas** em voto por uma oferta política que encontra os **freios** institucionais enfraquecidos.
@@ -27,7 +27,7 @@ aliases: [Matriz Teórica]
 
 - [[#1. Matriz por eixo|1. Matriz por eixo]] · as 57 entradas, em sete eixos
 - [[#2. Arquitetura causal|2. Arquitetura causal]] · o esquema integrado, em diagrama e em camadas
-- [[#3. Os sete circuitos de realimentação|3. Os sete circuitos de realimentação]] · como o sistema se reforça, com grau de robustez
+- [[#3. Os oito circuitos de realimentação|3. Os oito circuitos de realimentação]] · como o sistema se reforça, com grau de robustez
 - [[#4. Contrapontos e tensões|4. Contrapontos e tensões]] · o que relativiza o modelo
 - [[#5. Aplicação ao Brasil · da mancha ao Congresso de 2027|5. Aplicação ao Brasil]] · fatos de 2005 a 2026 lidos pelos eixos
 - [[#6. Lacunas e agenda|6. Lacunas e agenda]] · o que a matriz ainda não cobre
@@ -42,10 +42,10 @@ aliases: [Matriz Teórica]
 | --- | --- | --- | :---: |
 | **1 · Raízes psíquicas** | Por que pessoas abrem mão da liberdade? | Fromm, Polanyi, Arendt, Safatle, Reich | 6 |
 | **2 · Base material** | Como o desgaste do tempo, do corpo e do cuidado prepara o terreno? | Federici, Rosa, Crary, Mullainathan & Shafir, Brown, Fraser | 9 |
-| **3 · Moral, gênero e religião** | Como o medo se torna combustível político? | Butler, Lamont, Stenner, Hochschild, Segato, Spyer, Mariano, Almeida, Biroli · Machado · Vaggione | 11 |
+| **3 · Moral, gênero e religião** | Como o medo se torna combustível político? | Butler, Lamont, Stenner, Hochschild, Segato, Spyer, Mariano, Almeida, Biroli · Machado · Vaggione, Bowler, Weber | 13 |
 | **4 · Mente e tecnologia** | Como a infraestrutura digital captura atenção e corrói a verdade? | Postman, Fisher, Han, Zuboff, Empoli, Campos Mello, Cesarino, DiResta, Nemer, Mercier | 13 |
-| **5 · Disciplina e formação** | Como instituições formam sujeitos obedientes ou autônomos? | Adorno, Foucault, Altemeyer, Castro, Frigotto, Freire | 8 |
-| **6 · Brasil** | Que mediações nacionais explicam a virada autoritária? | Jessé Souza, Singer, Feltran, Pinheiro-Machado, Nobre, Lynch & Cassimiro, Caldeira, Mannheim, Nicolau, Paes Manso, Leirner, Pompeia, Nunes | 14 |
+| **5 · Disciplina e formação** | Como instituições formam sujeitos obedientes ou autônomos? | Adorno, Foucault, Altemeyer, Castro, Frigotto, Freire, Giacomin | 9 |
+| **6 · Brasil** | Que mediações nacionais explicam a virada autoritária? | Jessé Souza, Singer, Feltran, Pinheiro-Machado, Nobre, Lynch & Cassimiro, Caldeira, Mannheim, Nicolau, Paes Manso, Leirner, Pompeia, Nunes, Robin, Sharlet, Alonso, Solano, Gethin · Martínez-Toledano · Piketty | 21 |
 | **7 · Desfecho institucional** | Como a democracia morre por dentro? | Zakaria, Levitsky & Way, Bermeo, Müller, Levitsky & Ziblatt, Scheppele, Svolik, Guriev & Treisman, Applebaum, Ziblatt | 12 |
 
 ---
@@ -98,7 +98,7 @@ aliases: [Matriz Teórica]
 >
 > **Tese.** O fascismo é a expressão política organizada do caráter do homem comum, formado pela família patriarcal e pela repressão sexual: submisso e revoltado ao mesmo tempo. Por isso as massas podem agir contra os próprios interesses, e o líder só vence quando encontra eco nessa estrutura.
 >
-> **Mecanismo.** Dá nome à família autoritária da camada ① e ao Circuito 2: a autoridade do pai prepara a obediência ao chefe, e o misticismo religioso oferece o alívio. **Limite:** a teoria sexual não se sustenta em dados, e o voto jovem de 2026, criado sob costumes mais livres, pende à direita (§5.3).
+> **Mecanismo.** Dá nome à família autoritária da camada ① e ao Circuito 2: a autoridade do pai prepara a obediência ao chefe, e o misticismo religioso oferece o alívio. No topo, a mesma autoridade se exerce sobre a empregada e o funcionário: a hierarquia privada ([[6.17-robin-the-reactionary-mind|Robin]]) liga a família autoritária à segunda via sem passar pela escassez. **Limite:** a teoria sexual não se sustenta em dados, e o voto jovem de 2026, criado sob costumes mais livres, pende à direita (§5.3).
 
 ### Eixo 2 · Base material: tempo, corpo e cuidado
 
@@ -123,7 +123,7 @@ aliases: [Matriz Teórica]
 >
 > **Tese.** O neoliberalismo é uma racionalidade que transforma o cidadão em capital humano e esvazia o *demos*. A desregulamentação dos mercados exige o fortalecimento da moralidade tradicional: restam só duas instâncias legítimas, o mercado e a família moralizada.
 >
-> **Mecanismo.** Produz um Estado mínimo na economia e autoritário na moral. A liberdade passa a significar liberdade de discriminar e de não ser regulado, terreno fértil para o populismo reacionário. No Brasil, o peso que Brown dá à masculinidade branca ferida pesa menos que religião e segurança pública.
+> **Mecanismo.** Produz um Estado mínimo na economia e autoritário na moral. A liberdade passa a significar liberdade de discriminar e de não ser regulado, terreno fértil para o populismo reacionário. Para o topo, o neoliberalismo não é precariedade, é programa: menos imposto e menos regulação do trabalho (segunda via, Eixo 6). No Brasil, o peso que Brown dá à masculinidade branca ferida pesa menos que religião e segurança pública.
 
 > [!note] Sendhil Mullainathan & Eldar Shafir · Imposto da escassez sobre a largura de banda
 > **Obras.** [[2.5-mullainathan-shafir-escassez|Escassez]]: uma nova forma de pensar a falta de recursos (2013) · *cognitivo / comportamental*
@@ -155,7 +155,7 @@ aliases: [Matriz Teórica]
 >
 > **Tese.** A predisposição autoritária (preferência por unidade e conformidade sobre diversidade e autonomia) é estável, mas latente. Ela “acorda” diante de ameaça normativa: a percepção de que a ordem moral comum está se desfazendo.
 >
-> **Mecanismo.** É o modelo de interação que organiza a [[#2. Arquitetura causal|arquitetura causal]]: **predisposição × gatilho**. A mesma pessoa pode ser tolerante em tempos estáveis e intolerante sob ameaça percebida, o que explica por que choques morais mobilizam mais que argumentos econômicos.
+> **Mecanismo.** É o modelo de interação que organiza a [[#2. Arquitetura causal|arquitetura causal]]: **predisposição × gatilho**. A mesma pessoa pode ser tolerante em tempos estáveis e intolerante sob ameaça percebida, o que explica por que choques morais mobilizam mais que argumentos econômicos. A predisposição não depende de escassez: no topo, a ameaça percebida é à ordem hierárquica e à distância social, e o gatilho foi o lavajatismo de 2015–2016.
 
 > [!note] Judith Butler (1956–) · O fantasma do “anti-gênero”
 > **Obras.** [[3.8-butler-quem-tem-medo-do-genero|Quem tem medo do gênero?]] (2024); [[3.1-butler-problemas-de-genero|Problemas de Gênero]] (1990) · *discursivo / teoconservador*
@@ -176,7 +176,7 @@ aliases: [Matriz Teórica]
 >
 > **Tese.** Trabalhadores constroem dignidade traçando “fronteiras morais”: definem-se como responsáveis, disciplinados e trabalhadores em oposição a quem está logo abaixo (o “vagabundo”, o beneficiário, o imigrante).
 >
-> **Mecanismo.** Explica o desdém pelo vizinho que recebe benefício social e a adesão ao discurso meritocrático. O ressentimento é dirigido para baixo e para o lado, não para cima, desviando a crítica da estrutura econômica.
+> **Mecanismo.** Explica o desdém pelo vizinho que recebe benefício social e a adesão ao discurso meritocrático. O ressentimento é dirigido para baixo e para o lado, não para cima, desviando a crítica da estrutura econômica. Vista de cima, a fronteira moral defende a distância social que encolhe (domésticas, cotas, aeroporto): o topo moraliza a perda de privilégio como perda de mérito (segunda via, Eixo 6).
 
 > [!note] Juliano Spyer · Igreja evangélica como rede de proteção · contraponto
 > **Obras.** [[3.7-spyer-povo-de-deus|Povo de Deus]] (2020) · *antropológico / religião*
@@ -212,6 +212,20 @@ aliases: [Matriz Teórica]
 > **Tese.** A cruzada antigênero na América Latina é um neoconservadorismo: une católicos, evangélicos e setores seculares, usa o direito para restaurar uma ordem moral centrada na família e redefine democracia como domínio da maioria cristã.
 >
 > **Mecanismo.** Mostra o pânico de Butler virando **lei** (aborto, escola, linguagem) e põe mulheres cristãs como agentes da agenda, primeira pista para o voto feminino à direita. Liga o Eixo 3 ao legalismo do Eixo 7 (Scheppele).
+
+> [!note] Max Weber (1864–1920) · Teodiceia do sofrimento e da fortuna
+> **Obras.** [[3.13-weber-sociologia-da-religiao|Sociologia da religião]] (seção de *Economia e Sociedade*, 1922) · *sociologia da religião*
+>
+> **Tese.** Cada camada social pede à religião uma coisa diferente. Quem está embaixo pede salvação e a promessa de compensação; quem está em cima pede a garantia de que merece a sorte que tem.
+>
+> **Mecanismo.** Dá nome às duas faces da mesma igreja: a promessa para o fiel do fundo e a absolvição para o da frente. Liga o Eixo 3 à segunda via (Eixo 6) e ao camarote no templo. Explica também o carisma rotinizado da igreja-franquia, que contrasta com o líder político insubstituível (§5.5). **Limite:** tipologia histórica; não diz por que o fiel do fundo adota a teologia da frente.
+
+> [!note] Kate Bowler (1980–) · O evangelho da prosperidade
+> **Obras.** [[3.12-bowler-blessed|Blessed]]: a history of the American prosperity gospel (2013) · *história da religião / EUA*
+>
+> **Tese.** O evangelho da prosperidade transformou a fé em força mensurável, comprovada no saldo, no corpo saudável e na vitória pessoal, e converteu o sonho de ascensão em ritual. Ele tem duas versões: a dura, para quem precisa de um milagre, e a macia, para a classe média que já chegou.
+>
+> **Mecanismo.** Mostra a Teologia da Prosperidade de Mariano vista de cima: a mesma doutrina promete ascensão ao pobre e certifica o mérito do rico. No caso Lagoinha–Master, a pregação vira produto financeiro (cartão consignado, banco cristão) e a conta cai sobre aposentados (Eixo 2) *(inferência da matriz)*. **Limite:** caso americano; a igreja de classe alta brasileira segue sem obra própria (§6).
 
 ### Eixo 4 · Mente e tecnologia: atenção, dados e verdade
 
@@ -253,7 +267,7 @@ aliases: [Matriz Teórica]
 >
 > **Tese.** Estrategistas digitais (Bannon, Casaleggio, Cummings, entre outros) usam dados e algoritmos para identificar e amplificar as raivas de cada nicho, montando coalizões de ressentimentos contraditórios.
 >
-> **Mecanismo.** Liga plataformas a campanhas: o pânico moral não é só efeito colateral do engajamento, é matéria-prima deliberadamente cultivada. Mostra o lado profissional e planejado do caos aparente: o **lado da oferta**.
+> **Mecanismo.** Liga plataformas a campanhas: o pânico moral não é só efeito colateral do engajamento, é matéria-prima deliberadamente cultivada. Mostra o lado profissional e planejado do caos aparente: o **lado da oferta**. A coalizão contraditória que ele descreve junta as duas vias: o ressentimento de baixo e o interesse e o status de cima, unidos pelo mesmo inimigo (o PT, a esquerda, o “sistema”).
 
 > [!note] Patrícia Campos Mello · Disparos em massa e ataques coordenados
 > **Obras.** [[4.8-campos-mello-a-maquina-do-odio|A Máquina do Ódio]] (2020) · *jornalismo investigativo*
@@ -307,7 +321,7 @@ aliases: [Matriz Teórica]
 >
 > **Tese.** A educação deve vacinar contra a barbárie por meio da autonomia crítica e da recusa à submissão cega. Nota de método: a escala F (1950) foi superada empiricamente (viés de aquiescência, amostra) e retomada por Stenner; o ensaio de 1966 segue atual.
 >
-> **Mecanismo.** Ambientes educacionais pautados por ordem unida, punição e uniformização tendem a formar personalidades submissas à patente e agressivas com quem questiona. Base do circuito Formativo-Institucional.
+> **Mecanismo.** Ambientes educacionais pautados por ordem unida, punição e uniformização tendem a formar personalidades submissas à patente e agressivas com quem questiona. Base do circuito Formativo-Institucional. A pesquisa original de *A personalidade autoritária* mediu sobretudo a classe média americana: a disposição autoritária não é traço de pobre, o que sustenta a segunda via do topo.
 
 > [!note] Michel Foucault (1926–1984) · Corpos dóceis e poder disciplinar
 > **Obras.** [[5.3-foucault-vigiar-e-punir|Vigiar e Punir]] (1975); [[5.4-foucault-microfisica-do-poder|Microfísica do Poder]] (1979) · *disciplinar / corpos*
@@ -344,8 +358,15 @@ aliases: [Matriz Teórica]
 >
 > **Mecanismo.** É o par brasileiro de Adorno (heteronomia × *Mündigkeit*) e explica a formação do sujeito que se mobiliza, como os estudantes que abrem os atos do 2º turno de 2026 (§5.5). **Limite:** obra normativa; não mostra quando a conscientização vira voto nem por que o oprimido adere ao opressor, ponto que o próprio Freire reconhece (o opressor “hospedado”).
 
+> [!note] Marcia Gevieski Giacomin · O colégio cívico-militar por dentro
+> **Obras.** [[5.9-giacomin-escolas-civico-militares-no-parana|Escolas cívico-militares no Paraná sob a égide neoconservadora]] (dissertação, Unioeste, 2024) · *educação / Brasil*
+>
+> **Tese.** Os colégios cívico-militares do Paraná, que passam de três escolas em 2019 para 312 em 2024, trocam a gestão democrática por hierarquia e fazem de ordem, uniforme, continência e mérito o centro da formação, a serviço de um projeto neoconservador e de mercado.
+>
+> **Mecanismo.** Dá ao circuito Formativo-Institucional o que ele não tinha: o manual e a rotina da escola, descritos por dentro. Confirma a militarização como **projeto**, no ritmo de Frigotto. **Limite:** analisa documentos e princípios, não mede efeito sobre o aluno nem sobre o voto; a adesão das famílias nas consultas é lida só como coação.
+
 > [!warning] Elo mais fraco da matriz
-> O Eixo 5 tem a base brasileira mais recente da matriz (Castro, Frigotto, Freire) e nenhuma obra que meça o efeito da formação sobre o voto. O programa federal de escolas cívico-militares é de 2019 (encerrado em 2023; segue em programas estaduais), posterior à formação política de quem votou em 2018. A militarização escolar é, portanto, **efeito e projeto** do campo autoritário mais do que causa demonstrada. Trate o circuito Formativo-Institucional como hipótese (§3).
+> O Eixo 5 tem a base brasileira mais recente da matriz (Castro, Frigotto, Freire, Giacomin) e nenhuma obra que meça o efeito da formação sobre o voto. O programa federal de escolas cívico-militares é de 2019 (encerrado em 2023; segue em programas estaduais), posterior à formação política de quem votou em 2018. A militarização escolar é, portanto, **efeito e projeto** do campo autoritário mais do que causa demonstrada. Trate o circuito Formativo-Institucional como hipótese (§3).
 
 ### Eixo 6 · Brasil: como chegamos aqui
 
@@ -412,7 +433,7 @@ aliases: [Matriz Teórica]
 >
 > **Tese.** O medo do crime organiza a cidade, a linguagem e a política: separa “cidadãos de bem” de “bandidos”, legitima muros, segurança privada e violência policial, e desacredita os direitos humanos.
 >
-> **Mecanismo.** Dá base teórica ao medo da violência e à força da “bancada da bala”. Liga a demanda por ordem (Singer, Feltran) à aceitação da violência estatal (Segato). Núcleo do novo circuito Medo-Punição (§3).
+> **Mecanismo.** Dá base teórica ao medo da violência e à força da “bancada da bala”. Liga a demanda por ordem (Singer, Feltran) à aceitação da violência estatal (Segato). Núcleo do novo circuito Medo-Punição (§3). A cidade de muros é das camadas médias e altas: a ficha também sustenta a segunda via de adesão do topo.
 
 > [!note] Jairo Nicolau · Quem votou em Bolsonaro
 > **Obras.** [[6.10-nicolau-o-brasil-dobrou-a-direita|O Brasil dobrou à direita]] (2020) · *ciência política / comportamento eleitoral*
@@ -458,6 +479,64 @@ aliases: [Matriz Teórica]
 >
 > A presença progressista nas periferias passava pelas **Comunidades Eclesiais de Base (CEBs)** católicas, que encolheram a partir dos anos 1990. As igrejas pentecostais ocuparam esse espaço. É esse terreno que torna eficaz o circuito do WhatsApp descrito no Eixo 4.
 
+> [!note] Jessé Souza (1960–) · A elite do atraso e a classe média como capataz
+> **Obras.** [[6.15-jesse-souza-a-elite-do-atraso|A elite do atraso]]: da escravidão a Bolsonaro (2017) · [[6.16-jesse-souza-a-classe-media-no-espelho|A classe média no espelho]] (2018) · *sociologia / Brasil*
+>
+> **Tese.** O atraso brasileiro vem da escravidão, não da corrupção herdada de Portugal: ela deixou uma classe de desprezados e uma classe média que se aliou à elite do dinheiro para manter a distância. Essa classe média se define pelo conhecimento valorizado herdado em casa, e seu topo, que se imagina elite, serve de capataz dos donos do dinheiro, usando o combate seletivo à corrupção para defender a própria distância.
+>
+> **Mecanismo.** É a via de cima do mesmo autor da via de baixo (6.1, 6.9): a fronteira moral de Lamont vista do alto. Explica o antipetismo que nasce no topo (panelaços e ruas de 2015, impeachment de 2016) antes de descer à massa. **Limite:** explicação de causa única (escravidão e mídia); retratos compostos e frações sem amostra.
+
+> [!note] Corey Robin (1967–) · A vida privada do poder
+> **Obras.** [[6.17-robin-the-reactionary-mind|The Reactionary Mind]]: conservatism from Edmund Burke to Donald Trump (2ª ed., 2018) · *teoria política / EUA*
+>
+> **Tese.** O conservadorismo não é amor à tradição, mas a reação de quem tem poder ao ver os de baixo ganharem voz. O poder que ele defende mora antes de tudo na vida privada: na casa, na fábrica e no campo.
+>
+> **Mecanismo.** Liga a família autoritária (Reich, Adorno) à classe sem passar pela escassez: o pai que manda é o patrão que manda. Explica a reação à PEC das Domésticas (2013) e à reforma trabalhista como defesa do mando, não só do custo *(inferência da matriz)*. **Limite:** não explica o batalhador sem empregada nem empresa que vota à direita.
+
+> [!note] Jeff Sharlet (1972–) · A irmandade dos homens-chave
+> **Obras.** [[6.18-sharlet-the-family|The Family]]: the secret fundamentalism at the heart of American power (2008) · *jornalismo / religião / EUA*
+>
+> **Tese.** Ao lado do fundamentalismo de massa existe um fundamentalismo de elite, discreto, que cultiva os poderosos como escolhidos de Deus e liga senadores, generais, empresários e ditadores numa irmandade de oração em que favor, acesso e negócio passam por amizade em Cristo.
+>
+> **Mecanismo.** É a validação por confiança de Campos Mello e Nemer, mas entre elites: dá nome à irmandade elite–púlpito da camada ⑤. No caso Lagoinha–Master, a linguagem de “irmãos” cobre casamento entre famílias, doação de campanha, avião emprestado e porta aberta no STF *(inferência da matriz)*. **Limite:** caso americano e reportagem; não mede o peso da irmandade no voto.
+
+> [!note] Angela Alonso (1969–) · As ruas de 2013 a 2016
+> **Obras.** [[6.19-alonso-treze|Treze]]: a política de rua de Lula a Dilma (2023) · *sociologia dos movimentos sociais*
+>
+> **Tese.** Junho de 2013 não foi movimento de um rumo só nem surpresa: três campos de ativismo, dois à esquerda do governo e um à direita, formaram-se em dez anos de governos do PT e foram à rua ao mesmo tempo, lado a lado, sem serem aliados.
+>
+> **Mecanismo.** Mostra a ativação (③) como obra de redes cívicas de classe média, não de massa exausta: o campo patriota, de verde e amarelo, vem do topo escolarizado e domina as ruas de 2015 e 2016. **Limite:** estuda a rua, não a urna; não explica o comparecimento da base pobre que decide em 2014 e em 2026.
+
+> [!note] Esther Solano (org.) · A reinvenção das direitas
+> **Obras.** [[6.20-solano-o-odio-como-politica|O ódio como política]]: a reinvenção das direitas no Brasil (2018) · *coletânea / ciência política*
+>
+> **Tese.** A direita que ocupa ruas e redes a partir de 2015 é a soma de um trabalho longo de organizações financiadas pelo topo empresarial, que difundem o mercado como única medida de liberdade, com um conservadorismo moral e religioso que dá a esse programa base popular.
+>
+> **Mecanismo.** Preenche a **oferta** da segunda via: think tanks, MBL e a agenda de austeridade (Casimiro, Rossi e Dweck) são o interesse material do topo organizado antes do candidato. **Limite:** escrito antes de 2018; não explica por que o topo fechou com um outsider de fora desse ecossistema (ver Ziblatt).
+
+> [!note] Amory Gethin, Clara Martínez-Toledano & Thomas Piketty (orgs.) · Diploma, renda e voto
+> **Obras.** [[6.21-gethin-martinez-toledano-piketty-political-cleavages|Political Cleavages and Social Inequalities]] (2021), com o cap. 14 sobre o Brasil · *economia política / dados eleitorais*
+>
+> **Tese.** Nas democracias ricas, o topo se partiu: o diploma vota na esquerda e o dinheiro na direita. No Brasil aconteceu o contrário: depois de 2006 o voto se organizou por classe, com pobres e Nordeste de um lado e diploma e renda alta juntos do outro.
+>
+> **Mecanismo.** É a única medida do voto do topo na matriz. Mostra que a segunda via brasileira é de classe, não de diploma, e que a hesitação do ensino superior no 2º turno de 2026 é novidade, não regra: veio de uma frente pela democracia, não de uma esquerda do diploma *(inferência da matriz)*. **Limite:** dados até 2018; escolaridade no Brasil mistura o topo e o batalhador diplomado.
+
+> [!tip] Segunda via: por que o topo também adere
+> A exaustão cognitiva explica a massa, não o médico, o comerciante do interior ou o investidor. Quem tem tempo, condomínio e escola privada não sofre de escassez de largura de banda; adere por outra via, e as duas se encontram na conversão (⑤). Quatro forças se somam *(inferência da matriz)*:
+> - **Interesse material:** imposto, custo do trabalho e Estado mínimo; a extrema direita entrega a agenda econômica que o centro-direita já não consegue eleger (Ziblatt, Brown).
+> - **Perda de distância social:** o ressentimento do topo não busca dignidade contra quem está abaixo, mas defende a distância que encolhe (PEC das Domésticas de 2013, cotas, o pobre no aeroporto). É a fronteira moral de Lamont vista de cima; Jessé Souza a lê em [[6.15-jesse-souza-a-elite-do-atraso|A elite do atraso]] e [[6.16-jesse-souza-a-classe-media-no-espelho|A classe média no espelho]].
+> - **Hierarquia privada:** o conservadorismo defende o poder do patrão e do pai no espaço privado ([[6.17-robin-the-reactionary-mind|Corey Robin]]), o que liga a família autoritária (Reich, Adorno) à classe sem passar pela escassez.
+> - **Medo do crime murado:** condomínio, segurança privada e “fala do crime” nascem nas camadas médias e altas (Caldeira).
+>
+> O topo não é bloco, mas no Brasil a divisão é recente. Nas democracias ricas, o diploma alto foi para a esquerda e o patrimônio ficou à direita (“Brahmin Left versus Merchant Right”); no Brasil, o capítulo sobre o país mostra o oposto até 2018: depois de 2006, diploma e renda alta votam juntos contra o PT, e o conflito se organiza numa linha só, de classe ([[6.21-gethin-martinez-toledano-piketty-political-cleavages|Gethin, Martínez-Toledano e Piketty]]). O patrimônio comercial brasileiro é o empresário do interior, o agro e o varejo. A novidade de 2026 é o diploma hesitar, e a explicação mais provável não é o lulismo: a mobilização de artistas e influenciadores no 2º turno pediu voto pela democracia, não pelo PT, e atraiu centro e centro-direita, com dissidências de ex-bolsonaristas e lavajatistas (§5.5). Que esse movimento explique a hesitação do diploma é *(inferência da matriz)*. No 2º turno, as duas vias se ativam juntas e em sentidos opostos: a base fecha com Lula enquanto o topo de renda e o ensino superior fecham com Flávio. O diploma oscila antes de fechar; o patrimônio não oscila (§5.5).
+
+> [!tip] A igreja dos ricos: o camarote e o fundo
+> A matriz lê a igreja pelo lado da quadra (Spyer, Mariano, Almeida). As megaigrejas de classe alta cumprem outra função, e o caso Lagoinha–Banco Master (2018–2026) a mostra por inteiro *(inferência da matriz)*:
+> - **Teodiceia da fortuna:** o afortunado precisa sentir que merece a sorte ([[3.13-weber-sociologia-da-religiao|Weber]]). A Teologia da Prosperidade tem duas faces: promessa para o fiel do fundo, absolvição para o da frente. Na Lagoinha Orlando, a série de cultos “Crie Riqueza” leva coach de finanças e herdeira bilionária ao púlpito ([[3.12-bowler-blessed|Kate Bowler]]).
+> - **O camarote no templo:** a área reservada diante do altar, na unidade de Alphaville, põe as duas pontas da coalizão sob o mesmo teto. A aliança entre classes que o interesse material separa se forma no templo antes do partido.
+> - **A irmandade:** a linguagem de parentesco espiritual (“irmão”, “irmãozão”, *brotherhood*) cobre favor, crédito, doação de campanha e intimidação. O pastor apresenta o banqueiro ao deputado; membros da igreja abrem a porta de um ministro do STF. É a validação por confiança de Campos Mello e Nemer, mas entre elites ([[6.18-sharlet-the-family|Jeff Sharlet]]).
+> - **A fé como produto financeiro:** do púlpito sai o cartão consignado para aposentados; depois, o banco cristão. A conta da quebra cai sobre previdências estaduais e servidores, não sobre a área VIP (Eixo 2).
+
 ### Eixo 7 · Desfecho institucional
 
 > [!question] Como a democracia morre por dentro?
@@ -502,7 +581,7 @@ aliases: [Matriz Teórica]
 >
 > **Tese.** A democracia sobrevive quando partidos conservadores fortes e organizados filtram os extremistas do próprio campo. Quando esses partidos enfraquecem, a extrema direita ocupa o espaço.
 >
-> **Mecanismo.** Explica o colapso do centro em 2026: o PSD cai de 14 para 5 senadores, o voto de Caiado migra para Flávio na última semana e o PL absorve a direita. É a falha dos guardiões (*gatekeeping*) em ato.
+> **Mecanismo.** Explica o colapso do centro em 2026: o PSD cai de 14 para 5 senadores, o voto de Caiado migra para Flávio na última semana e o PL absorve a direita. É a falha dos guardiões (*gatekeeping*) em ato. A tese também explica o topo: as elites aceitam a democracia enquanto um partido conservador forte protege seus interesses; com o PSDB esvaziado em 2018, migram para o extremista, com um fiador econômico (Paulo Guedes).
 
 > [!note] Kim Lane Scheppele · Legalismo autocrático
 > **Obras.** [[7.7-scheppele-autocratic-legalism|Autocratic Legalism]] (*University of Chicago Law Review*, 2018) · *jurídico / constitucional*
@@ -523,14 +602,14 @@ aliases: [Matriz Teórica]
 >
 > **Tese.** O ditador típico do século XXI governa pela manipulação da informação, asfixia regulatória e simulação de normalidade civil, em vez da repressão aberta.
 >
-> **Mecanismo.** O poder não fuzila em praça pública: compra jornais via oligarcas aliados, altera discretamente regras eleitorais e mantém os shopping centers abertos. É a forma do regime no fim do processo. **Limite:** estuda regimes já instalados; não prevê a reação de STF e TSE.
+> **Mecanismo.** O poder não fuzila em praça pública: compra jornais via oligarcas aliados, altera discretamente regras eleitorais e mantém os shopping centers abertos. A estabilidade de consumo é o contrato com o topo: a elite aceita a autocracia enquanto ela preserva patrimônio e mercado (Ziblatt). É a forma do regime no fim do processo. **Limite:** estuda regimes já instalados; não prevê a reação de STF e TSE.
 
 > [!note] Anne Applebaum (1964–) · Redes cleptocráticas transnacionais
 > **Obras.** [[7.11-applebaum-autocracia-sa|Autocracia S.A.]] (2024); *O Crepúsculo da Democracia* (2020) · *geopolítico / transnacional*
 >
 > **Tese.** As autocracias contemporâneas não se unem por ideologia, mas por interesses: formam redes de apoio financeiro, tecnológico, de vigilância e de propaganda que se protegem mutuamente.
 >
-> **Mecanismo.** Acrescenta a dimensão transnacional: a autocracia local se apoia em fluxos globais de dinheiro, tecnologia e desinformação, que ajudam a circular campanhas como o pânico “anti-gênero” (Butler). A rede global é **amplificador, não causa**: a ameaça brasileira veio de dentro.
+> **Mecanismo.** Acrescenta a dimensão transnacional: a autocracia local se apoia em fluxos globais de dinheiro, tecnologia e desinformação, que ajudam a circular campanhas como o pânico “anti-gênero” (Butler). As redes ligam também elites: financistas, empresários de mídia e igrejas transnacionais que circulam entre autocracias (a Lagoinha Global é um nó brasileiro). A rede global é **amplificador, não causa**: a ameaça brasileira veio de dentro.
 
 ---
 
@@ -542,11 +621,11 @@ aliases: [Matriz Teórica]
 ```mermaid
 %%{init: {"flowchart": {"wrappingWidth": 480}}}%%
 flowchart TB
-    L1["<b>① DISPOSIÇÕES</b> · lentas e estruturais<br><b>Psique</b> solidão · medo · desamparo · família autoritária · <i>Arendt · Fromm · Safatle · Reich</i><br><b>Base material</b> mercado sem freio · escassez · aceleração · cuidado<br><i>Polanyi · Brown · Fraser · Federici · Mullainathan-Shafir · Rosa · Crary</i><br><b>Moral e gênero</b> fronteiras morais · masculinidade · <i>Lamont · Hochschild · Segato</i><br><b>Atenção esgotada</b> espetáculo · autoexploração · <i>Postman · Han · Fisher</i><br><b>Formação</b> ⚠ heteronomia · corpos dóceis · <i>Adorno · Foucault</i>"]
-    L2["<b>② MEDIAÇÃO TERRITORIAL</b> · Brasil<br>Estado chega como polícia · <i>Feltran · Caldeira</i><br>Igreja na quadra · <i>Spyer</i> · Ethos do batalhador · <i>Jessé Souza</i><br>Ordem sem conflito · <i>Singer</i> · Memória geracional · <i>Mannheim</i><br>Milícias · <i>Paes Manso</i> · Mapa do voto · <i>Nicolau</i>"]
-    L3["<b>③ ATIVAÇÃO</b> · conjuntural<br>Junho 2013 · recessão 2014-16 · Lava Jato · medo da violência · <i>Nobre</i><br>Ameaça normativa · <i>Stenner</i> · Fantasma do gênero · <i>Butler</i>"]
-    L4["<b>④ VEÍCULOS</b> · oferta e transmissão<br>Plataformas e engajamento · <i>Zuboff · Cesarino</i><br>Estrategistas e influenciadores · <i>Empoli · DiResta</i><br>Corte → WhatsApp → validação · <i>Campos Mello · Spyer</i> · Partido digital · <i>Nobre</i><br>Infraestrutura humana · <i>Nemer</i> · Rede evangélica · <i>Almeida</i><br>Oferta organizada · agro <i>Pompeia</i> · militares <i>Leirner</i>"]
-    L5["<b>⑤ CONVERSÃO POLÍTICA</b><br>Populismo reacionário · <i>Lynch e Cassimiro · Müller</i><br>Polarização tolera violações · <i>Svolik</i><br>Falha dos guardiões · <i>Ziblatt · Levitsky e Ziblatt</i><br>Movimento como negócio · <i>Nunes</i>"]
+    L1["<b>① DISPOSIÇÕES</b> · lentas e estruturais<br><b>Psique</b> solidão · medo · desamparo · família autoritária · <i>Arendt · Fromm · Safatle · Reich</i><br><b>Base material</b> mercado sem freio · escassez · aceleração · cuidado<br><i>Polanyi · Brown · Fraser · Federici · Mullainathan-Shafir · Rosa · Crary</i><br><b>Moral e gênero</b> fronteiras morais · masculinidade · <i>Lamont · Hochschild · Segato</i><br><b>Atenção esgotada</b> espetáculo · autoexploração · <i>Postman · Han · Fisher</i><br><b>Formação</b> ⚠ heteronomia · corpos dóceis · <i>Adorno · Foucault</i><br><b>Topo</b> disposição sem escassez · hierarquia privada · <i>Adorno · Stenner</i>"]
+    L2["<b>② MEDIAÇÃO TERRITORIAL</b> · Brasil<br>Estado chega como polícia · <i>Feltran · Caldeira</i><br>Igreja na quadra · <i>Spyer</i> · Ethos do batalhador · <i>Jessé Souza</i><br>Ordem sem conflito · <i>Singer</i> · Memória geracional · <i>Mannheim</i><br>Milícias · <i>Paes Manso</i> · Mapa do voto · <i>Nicolau</i><br><b>Segunda via</b> topo: interesse · distância social · muros · <i>Ziblatt · Caldeira</i><br>Distância social · <i>Jessé Souza</i> · Hierarquia privada · <i>Robin</i><br>Igreja com camarote · teodiceia da fortuna · <i>Weber · Bowler</i>"]
+    L3["<b>③ ATIVAÇÃO</b> · conjuntural<br>Junho 2013 · recessão 2014-16 · Lava Jato · medo da violência · <i>Nobre</i><br>Ameaça normativa · <i>Stenner</i> · Fantasma do gênero · <i>Butler</i><br>Lavajatismo do topo · ruas de 2015-16 · <i>Alonso</i>"]
+    L4["<b>④ VEÍCULOS</b> · oferta e transmissão<br>Plataformas e engajamento · <i>Zuboff · Cesarino</i><br>Estrategistas e influenciadores · <i>Empoli · DiResta</i><br>Corte → WhatsApp → validação · <i>Campos Mello · Spyer</i> · Partido digital · <i>Nobre</i><br>Infraestrutura humana · <i>Nemer</i> · Rede evangélica · <i>Almeida</i><br>Oferta organizada · agro <i>Pompeia</i> · militares <i>Leirner</i> · think tanks <i>Solano</i>"]
+    L5["<b>⑤ CONVERSÃO POLÍTICA</b><br>Populismo reacionário · <i>Lynch e Cassimiro · Müller</i><br>Polarização tolera violações · <i>Svolik</i><br>Falha dos guardiões · <i>Ziblatt · Levitsky e Ziblatt</i><br>Movimento como negócio · <i>Nunes</i> · Irmandade elite–púlpito · <i>Sharlet</i> · caso Master"]
     L6["<b>⑥ DESFECHO</b> · autocracia eleitoral<br>Engrandecimento do Executivo · legalismo autocrático · <i>Bermeo · Scheppele</i><br>Campo inclinado · democracia iliberal · <i>Levitsky e Way · Zakaria</i><br>Manipulação e redes globais · <i>Guriev e Treisman · Applebaum</i>"]
     FR{{"<b>FREIOS</b><br>STF e TSE · federalismo<br>imprensa · vínculos externos<br>alternância"}}
     ALT["<b>Leitura alternativa</b> · Safatle<br>fascismo restrito → generalizado<br>a periferia de ② já vivia o desfecho"]
@@ -571,14 +650,15 @@ flowchart TB
 > [!example]+ ① Disposições · o que está presente antes de qualquer crise
 > - **Solidão organizada (Arendt):** desenraizamento e perda do mundo comum; indivíduos supérfluos tornam-se “massa” disponível.
 > - **Medo à liberdade (Fromm):** angústia da autonomia sem amparo; alívio pela submissão a uma autoridade.
-> - **Família autoritária (Reich, Adorno):** heteronomia primária, obediência ao pai, repressão afetiva convertida em ódio ao diferente. Para Safatle, é a família *normal*, não um desvio.
+> - **Família autoritária (Reich, Adorno):** heteronomia primária, obediência ao pai, repressão afetiva convertida em ódio ao diferente. Para Safatle, é a família *normal*, não um desvio. No topo, ela se estende ao patrão e à casa com empregada ([[6.17-robin-the-reactionary-mind|Robin]]).
 > - **Circuito do medo (Safatle):** o Estado que promete proteção prende os sujeitos ao medo e à espera do salvador.
 > - **Duplo movimento (Polanyi):** o mercado desorganiza a vida; a sociedade busca proteção, que pode tomar forma autoritária.
-> - **Neoliberalismo precarizante (Brown):** uberização, escala 6x1, desmonte do *welfare*; Estado mínimo na economia, autoritário na moral.
+> - **Neoliberalismo precarizante (Brown):** uberização, escala 6x1, desmonte do *welfare*; Estado mínimo na economia, autoritário na moral. Para o topo, o mesmo programa é interesse, não sofrimento.
 > - **Trabalho reprodutivo gratuito (Federici, Fraser):** mulheres assumem creche, saúde e asilo; o capital consome suas condições.
 > - **Escassez cognitiva (Mullainathan & Shafir):** falta de tempo e dinheiro reduz a largura de banda mental.
 > - **Aceleração e 24/7 (Rosa, Crary):** sem tempo para deliberar; sono e pausa colonizados.
-> - **Fronteiras morais e masculinidade (Lamont, Hochschild, Segato):** dignidade contra quem está abaixo; potência provada pela violência.
+> - **Fronteiras morais e masculinidade (Lamont, Hochschild, Segato):** dignidade contra quem está abaixo; potência provada pela violência. No topo, a fronteira defende a distância social que encolhe.
+> - **Disposição sem escassez (Adorno, Stenner):** a predisposição autoritária também está nas camadas médias e altas, que não sofrem de exaustão cognitiva; a exaustão explica a massa, não o topo.
 > - **Atenção esgotada (Postman, Han, Fisher):** espetáculo sem atrito, autoexploração com culpa individual, anestesia dopaminérgica no lugar do descanso.
 > - **Formação heterônoma (Adorno, Foucault):** submissão à farda e à patente, desvio punido como quebra moral. ⚠ hipótese, ver Eixo 5.
 
@@ -591,45 +671,49 @@ flowchart TB
 > - **Milícias (Paes Manso):** no Rio, a proteção contra o tráfico vira poder armado de policiais e ex-policiais, com elos na política.
 > - **Igreja neopentecostal (Mariano):** prosperidade e guerra espiritual como gramática; o crente que antes fugia do mundo passa a negociar com ele.
 > - **Mapa do voto (Nicolau):** em 2018, o bolsonarismo foi fenômeno urbano, masculino e evangélico, vencendo nos três níveis de escolaridade fora do Nordeste.
+> - **Segunda via, o topo (Ziblatt, Caldeira, [[6.15-jesse-souza-a-elite-do-atraso|Jessé Souza]]):** adesão por interesse material, defesa da distância social e medo do crime murado, não por escassez; as duas vias se encontram em ⑤.
+> - **Igreja com camarote ([[3.13-weber-sociologia-da-religiao|Weber]]):** a megaigreja de classe alta absolve a riqueza e reúne, sob o mesmo teto, a frente VIP e o fiel do fundo.
 
 > [!example]+ ③ Ativação · o que acorda a disposição
-> - **Gatilhos conjunturais:** Junho de 2013 e o esgotamento do pemedebismo (Nobre); recessão de 2014 a 2016 (Polanyi); Lava Jato e antipetismo como identidade; medo da violência urbana.
+> - **Gatilhos conjunturais:** Junho de 2013 e o esgotamento do pemedebismo (Nobre); recessão de 2014 a 2016 (Polanyi); Lava Jato e antipetismo como identidade; medo da violência urbana. O antipetismo nasce no topo: a classe média alta escolarizada leva o lavajatismo às ruas de 2015–2016 antes de ele descer à massa ([[6.19-alonso-treze|Alonso]], [[6.20-solano-o-odio-como-politica|Solano]]).
 > - **Ameaça normativa (Stenner):** a percepção de que a ordem moral se desfaz ativa a predisposição latente.
 > - **Crise de 2008 e negação (Nunes):** as promessas de prosperidade perdem credibilidade, mas não há alternativa; a negação coletiva cria demanda por mentiras confortáveis.
 > - **Tradução da angústia material (Butler):** a insegurança econômica vira pânico de gênero e moral: ameaça à família, às crianças e à fé.
-> - **Desvio da revolta:** a raiva contra a miséria econômica é redirecionada à caça aos “inimigos da ordem”, e o ressentimento vai para baixo, não para cima (Lamont).
+> - **Desvio da revolta:** a raiva contra a miséria econômica é redirecionada à caça aos “inimigos da ordem”, e o ressentimento vai para baixo, não para cima (Lamont). No topo, a revolta é contra a perda de distância e contra o imposto, não contra a miséria.
 
 > [!example]+ ④ Veículos · quem organiza e transmite
 > - **Superávit comportamental (Zuboff):** plataformas monetizam o tempo de tela residual e impulsionam o choque moral porque engaja mais.
-> - **Raiva como matéria-prima (Empoli):** estrategistas segmentam ressentimentos e montam coalizões contraditórias.
+> - **Raiva como matéria-prima (Empoli):** estrategistas segmentam ressentimentos e montam coalizões contraditórias, juntando a via de baixo (ressentimento) e a de cima (interesse e status).
 > - **Lógica cibernética (Cesarino):** inversão da verdade e da autoridade; o bolsonarismo como ecossistema auto-organizado.
 > - **Confiança parassocial (DiResta):** o influenciador herda a confiança que era da imprensa e da ciência.
 > - **Mensageria e *zero-rating* (Campos Mello):** produção no YouTube e TikTok → grupos de família e igreja → validação por confiança.
 > - **Partido digital (Nobre):** veículo antissistema que dispensa a estrutura partidária clássica.
 > - **Infraestrutura humana (Nemer):** nos grupos de WhatsApp, a bolha é montada por pessoas com papéis definidos, não por algoritmo.
 > - **Rede evangélica (Almeida):** os fiéis migram antes dos líderes; a palavra do pastor chancela um voto já mobilizado.
-> - **Oferta organizada (Pompeia, Leirner):** a bancada ruralista e seu escritório técnico; um setor militar que trata a esquerda como inimigo interno.
+> - **Canais do topo:** o topo não depende do zap de família; tem grupos de empresários (os que defenderam golpe em 2022), rádio e TV de opinião e o púlpito das megaigrejas. Mesma validação por confiança, outro circuito *(inferência da matriz)*.
+> - **Oferta organizada (Pompeia, Leirner, Solano):** a bancada ruralista e seu escritório técnico; um setor militar que trata a esquerda como inimigo interno; think tanks e movimentos financiados pelo topo empresarial, que preparam a agenda econômica antes do candidato ([[6.20-solano-o-odio-como-politica|Solano]]).
 
 > [!example]+ ⑤ Conversão política · do afeto ao voto
 > - **Populismo reacionário (Lynch & Cassimiro):** repertório autoritário histórico reativado como oferta ideológica.
 > - **Antipluralismo (Müller):** “só nós somos o povo”; todo opositor é ilegítimo.
 > - **Polarização (Svolik):** tolerância a violações do próprio lado; o antipetismo eleva o preço de votar contra.
-> - **Falha dos guardiões (Ziblatt, Levitsky & Ziblatt):** o centro-direita se esvazia e deixa de filtrar extremistas.
+> - **Falha dos guardiões (Ziblatt, Levitsky & Ziblatt):** o centro-direita se esvazia e deixa de filtrar extremistas; sem ele, as elites levam seus interesses ao extremista.
 > - **Movimento como negócio (Nunes):** militares, policiais, Centrão e influenciadores encontram no bolsonarismo oportunidade de ganho.
+> - **Irmandade elite–púlpito ([[6.18-sharlet-the-family|Sharlet]], caso Master):** banqueiro, pastor e parlamentares unidos pela linguagem de “irmãos” trocam doação, jatinho, acesso ao STF e favores; a confiança religiosa converte capital em poder político.
 > - **Juridificação reativa (Biroli, Machado & Vaggione):** a pauta moral vira projeto de lei e disputa nos tribunais.
 > - **Paralisia da resistência coletiva (Fisher, Han):** cancelamento do futuro e enxame sem projeto de classe.
 
 > [!example]+ ⑥ Desfecho macropolítico · a autocracia eleitoral
 > - **Democracia iliberal e autoritarismo competitivo (Zakaria, Levitsky & Way):** o líder forte é referendado nas urnas como salvador da Pátria e da Família; o campo de jogo é inclinado em nome da “maioria moral”.
 > - **Engrandecimento do Executivo e legalismo autocrático (Bermeo, Scheppele):** cada passo é legal; o conjunto é autoritário, sem golpe visível.
-> - **Ditadura da manipulação (Guriev & Treisman):** controle da imprensa por asfixia financeira e oligarcas amigos; fachada democrática e estabilidade de consumo mantidas (Huxley).
+> - **Ditadura da manipulação (Guriev & Treisman):** controle da imprensa por asfixia financeira e oligarcas amigos; fachada democrática e estabilidade de consumo mantidas (Huxley); a estabilidade é o contrato com o topo.
 > - **Redes transnacionais (Applebaum):** dinheiro, tecnologia e propaganda circulando entre autocracias.
 
 > [!danger] Leitura alternativa · fascismo generalizado (Safatle, 2026)
 > Não é a democracia que morre: práticas antes restritas a zonas e grupos descartáveis (a periferia de Caldeira e Feltran) se generalizam. Estado suicidário: o Estado deixa de proteger contra a morte e naturaliza a catástrofe. No diagrama, ela aparece como nota pontilhada ao lado do desfecho.
 
 > [!success] Freios
-> STF e TSE (inelegibilidade em 2023, condenação em 2025), federalismo e governos estaduais de outros campos, imprensa profissional, vínculos e pressão externa sobre o resultado de 2022 (Levitsky & Way), alternância de 2022. Os freios não eliminam disposições nem veículos, mas explicam por que o mesmo ecossistema perde numa eleição e lidera noutra.
+> STF e TSE (inelegibilidade em 2023, condenação em 2025), federalismo e governos estaduais de outros campos, imprensa profissional, vínculos e pressão externa sobre o resultado de 2022 (Levitsky & Way), alternância de 2022. Em 2026 aparece um freio social: artistas, influenciadores e evangélicos progressistas pedem voto pela democracia e se somam a ex-aliados da direita que recusam Flávio ou votam em Lula, como Joice Hasselmann, Luciano Bivar e o general Santos Cruz (§5.5). Os freios não eliminam disposições nem veículos, mas explicam por que o mesmo ecossistema perde numa eleição e lidera noutra.
 
 **↺ Ciclo de retorno.** O regime, ou a ameaça dele, aprofunda a precariedade, esvazia serviços públicos e polariza ainda mais, realimentando as disposições.
 
@@ -638,7 +722,7 @@ flowchart TB
 
 ---
 
-## 3. Os sete circuitos de realimentação
+## 3. Os oito circuitos de realimentação
 
 Cada circuito transforma a saída de um eixo na entrada de outro, fazendo o sistema se reforçar. No diagrama, cada linha é um laço (a seta pontilhada fecha o ciclo) e a cor indica a robustez: 🟢 forte, 🟡 plausível, 🟠 hipótese.
 
@@ -680,7 +764,12 @@ flowchart TB
         c7a["Medo do crime<br><i>Caldeira</i>"] --> c7b["Pedido de<br>mão dura"] --> c7c["Letalidade e<br>encarceramento"] --> c7d["Facções e milícias<br><i>Feltran · Paes Manso</i>"]
         c7d -.-> c7a
     end
-    C1 ~~~ C2 ~~~ C3 ~~~ C4 ~~~ C5 ~~~ C6 ~~~ C7
+    subgraph C8["8 · Distância-Irmandade 🟠"]
+        direction LR
+        c8a["Distância social<br>encolhe <i>Jessé · Robin</i>"] --> c8b["Moralismo do topo<br>na rua <i>Alonso</i>"] --> c8c["Oferta financiada<br><i>Solano</i> · irmandade <i>Sharlet</i>"] --> c8d["Agenda do topo<br>no poder <i>Ziblatt</i>"]
+        c8d -.-> c8a
+    end
+    C1 ~~~ C2 ~~~ C3 ~~~ C4 ~~~ C5 ~~~ C6 ~~~ C7 ~~~ C8
 ```
 
 | # | Circuito | Autores | Robustez | Elo mais frágil |
@@ -692,6 +781,7 @@ flowchart TB
 | 5 | Escassez-Atenção | Mullainathan & Shafir · Rosa · Crary · Fisher | 🟡 plausível | Replicação parcial do imposto cognitivo |
 | 6 | Polarização-Erosão | Svolik · Müller · Bermeo · Scheppele | 🟢 forte | Experimentos com candidatos fictícios |
 | 7 | Medo-Punição | Caldeira · Feltran · Paes Manso · Safatle · Singer | 🟢 forte | Ligação facção → voto é inferência da matriz |
+| 8 | Distância-Irmandade | Jessé Souza · Robin · Alonso · Solano · Sharlet · Weber · Ziblatt | 🟠 hipótese | Só Gethin mede o voto do topo, e com dados até 2018 |
 
 > [!note]- 1 · Circuito Econômico-Reprodutivo (Federici ↔ Fraser ↔ Brown)
 > A austeridade fiscal e o desmonte dos serviços públicos forçam as mulheres a realizar jornadas domésticas extenuantes e gratuitas para sustentar a reprodução da força de trabalho, a “crise do cuidado” de Fraser. O discurso conservador da “família tradicional” opera como o verniz ideológico indispensável para que essa exploração não seja percebida como déficit do Estado, mas como vocação moral e sacrifício cristão. Quanto mais o Estado se retira, mais a família moralizada é exaltada, e mais legitimidade ganha quem promete defendê-la.
@@ -714,6 +804,9 @@ flowchart TB
 > [!note]- 7 · Circuito Medo-Punição (Caldeira ↔ Feltran ↔ Paes Manso ↔ Safatle ↔ Singer)
 > O medo do crime organiza a fala, a cidade e o voto: separa “cidadãos de bem” de “bandidos” e transforma direitos humanos em privilégio de criminoso (Caldeira). O medo cria a espera por um protetor e converte a promessa de “mão dura” em alívio (Safatle, 2015); o desejo de ordem sem conflito fica disponível para quem a promete (Singer). Eleita, a mão dura amplia a letalidade policial e o encarceramento em massa, e a prisão vira escola e sede das facções (Feltran). No Rio, a própria mão dura gera poder armado: policiais e ex-policiais formam milícias que dominam territórios e se ligam à política (Paes Manso). Mais facção, mais milícia e mais violência produzem mais medo, e o circuito recomeça. É o laço mais enraizado no território brasileiro e o que Safatle lê como passagem do fascismo restrito ao generalizado.
 
+> [!note]- 8 · Circuito Distância-Irmandade (Jessé Souza ↔ Robin ↔ Alonso ↔ Solano ↔ Sharlet ↔ Weber ↔ Ziblatt)
+> É o laço do topo, que não passa pela escassez: uma espécie de maçonaria neopentecostal dos ricos, em que fé, negócio e poder circulam entre irmãos. Quando os de baixo ganham direitos e espaço (a empregada com jornada, o pobre na universidade e no avião), o topo sente a distância social encolher e o mando privado ameaçado (Jessé Souza, Robin). Essa perda vira moralismo anticorrupção e ocupa as ruas de 2015 e 2016 (Alonso). Organizações financiadas pelo topo empresarial transformam o protesto em agenda econômica (Solano), e a irmandade entre banqueiro, pastor e parlamentar, com a absolvição da riqueza no púlpito (Sharlet, Weber), converte dinheiro em acesso político. Sem um partido de centro-direita forte, o topo leva essa agenda ao extremista (Ziblatt). No poder, a agenda reduz direitos e serviços, a distância volta a crescer e a próxima ameaça a ela reativa o circuito. As duas vias se encontram em ⑤: este laço fornece dinheiro, organização e respeitabilidade; os laços da base fornecem os votos. **Robustez 🟠:** o mecanismo é inferência da matriz a partir de obras sobre outros países ou anteriores a 2018; o caso Master é fato isolado, não padrão medido.
+
 ---
 
 ## 4. Contrapontos e tensões
@@ -730,8 +823,9 @@ O modelo é forte como mapa, mas tende a **superestimar o poder das plataformas*
 | **Atomização ou sociedade densa?** | *Sheri Berman, Civil Society and the Collapse of the Weimar Republic, World Politics (1997)* | O nazismo cresceu numa sociedade civil densa, cheia de associações, e não entre isolados. | Tensiona Arendt e a camada de atomização: no Brasil, igreja e grupo de família são redes densas e fechadas. O problema é a **qualidade** dos laços, não sua ausência. |
 | **Imposto cognitivo da escassez** | *Carvalho, Meier & Wang, American Economic Review (2016)* | Não encontraram queda cognitiva antes do dia de pagamento em amostra americana; a *Science* publicou críticas estatísticas ao estudo original. | Mantém o mecanismo de Mullainathan & Shafir como plausível, não como fato medido; o Circuito Escassez-Atenção perde força quantitativa. |
 | **Clivagem geracional** | *Norris & Inglehart, Cultural Backlash (2019)* | Prevê que os mais velhos sejam mais autoritários, por reação cultural à mudança de valores. | No Brasil de 2026 ocorre o oposto: idosos ficam com Lula, jovens pendem a Flávio. A explicação geracional é de memória (Mannheim), não de valores. |
-| **Escolaridade e voto** | *Gethin, Martínez-Toledano & Piketty, Political Cleavages and Social Inequalities (2021)* | Em democracias ricas, os mais escolarizados passaram a votar à esquerda. | No Brasil, escolaridade é quase espelho da renda: o ensino superior vota como a faixa de renda mais alta. A tese não se aplica diretamente aqui. |
+| **Escolaridade e voto** | *Gethin, Martínez-Toledano & Piketty, Political Cleavages and Social Inequalities (2021)* | Em democracias ricas, os mais escolarizados passaram a votar à esquerda. | O próprio livro diz que no Brasil não há esquerda do diploma: desde 2006, diploma e renda alta votam juntos contra o PT. Em 2026 o diploma chega a ser atraído pela esquerda no 2º turno, mas o “superior” inclui o batalhador ascendente e termina votando como a renda alta. Renda isola o topo; escolaridade mede outra coisa. |
 | **Democracia liberal como ponto de partida** | *Safatle, A ameaça interna (2026)* | As ditas democracias liberais foram “fascismos restritos”: democráticas para certas zonas e grupos, violentas para outros. | Tensiona o Eixo 7: a pergunta “como a democracia morre” supõe um ponto de partida que, na periferia urbana brasileira, nunca existiu por inteiro. |
+| **Exaustão não explica o topo** | *Segunda via (Eixo 6); Adorno (1950); Ziblatt (2017)* | Camadas médias e altas, sem escassez de tempo nem de dinheiro, também aderem, e o topo de renda fecha com Flávio no 2º turno de 2026. | O núcleo da matriz (exaustão cognitiva) explica a massa, não a coalizão inteira: o modelo precisa de duas vias de demanda que se encontram na conversão. |
 | **Agência dos fiéis e eleitores** | *Spyer (2020); Hochschild (2016); Pinheiro-Machado (2019)* | A adesão tem razões compreensíveis (materiais, afetivas e morais), não é só manipulação. | Exige que o modelo trate os atores como sujeitos com interesses, não como vítimas. Tensiona Jessé Souza (2024), que dá pouca agência ao eleitor. |
 
 > [!warning] Viés de confirmação embutido no método
@@ -794,6 +888,8 @@ Leitura das intenções de voto declaradas na véspera do 1º turno (Quaest/g1),
 | **A fala de Lula sobre o exame de próstata (28 set).** Num comício, Lula diz que “as mulheres aprendem a tomar toque desde quando são pequenas”. Opositores dão conotação sexual à fala; o PT diz que se referia a exames ginecológicos. | Eixo 3: pânico moral organizado em torno da proteção das crianças (Butler), pelo circuito corte → WhatsApp → validação. |
 | **A padroeira (30 set – 2 out).** Posts associam falsamente Flávio à retirada de Nossa Senhora Aparecida como padroeira; o TSE manda removê-los. Flávio e Tarcísio erguem a imagem da santa em ato. | Eixo 4: o circuito funciona nos dois sentidos, e a resposta é encenação (Postman). O ataque não pega entre católicos: a mensagem só cola quando confirma o que o eleitor já pensa (Mercier). Freios: o TSE age sobre os dois lados. |
 
+| **A irmandade exposta (21 set).** Episódio de Fábio Porchat (*Revelando*) reconstitui a aliança entre Banco Master e Lagoinha: casamento de 2018 que une as famílias Vorcaro e Valadão, cartão consignado anunciado do púlpito (2019), banco cristão (2024), Zettel como maior doador pessoa física de Bolsonaro e Tarcísio em 2022, jatinho de Vorcaro para Nikolas Ferreira, cobrança de US$ 24 milhões por Flávio para o filme do pai. A conta cai em previdências estaduais. | Eixo 6: segunda via do topo e igreja com camarote ([[3.13-weber-sociologia-da-religiao|Weber]], [[3.12-bowler-blessed|Bowler]]). Camada ⑤: movimento como negócio (Nunes) e irmandade elite–púlpito. Eixo 2: a fé vira crédito predatório para quem está no fundo. |
+
 ### 5.5 O 2º turno: a virada pelo comparecimento
 
 Lula vence com 51,8% dos válidos, a maior votação da história, depois de sair atrás no 1º turno. Flávio também supera a votação de Jair em 2022. A base autoritária não encolhe; o outro lado comparece.
@@ -805,10 +901,14 @@ Lula vence com 51,8% dos válidos, a maior votação da história, depois de sai
 | **O circuito nos dois sentidos.** O canal “Exército do Lula” no WhatsApp passa de 10 milhões de inscritos; jovens deputados recordistas de voto da esquerda formam a força-tarefa digital. Ruas e redes se alimentam. | Eixo 4: o meio não tem lado (Nemer, Cesarino); a confiança parassocial também serve à esquerda (DiResta). Eixo 1: a densidade associativa volta contra a atomização (Arendt, Berman) e a ressonância reaparece (Rosa). |
 | **A pesquisa como gatilho.** As pesquisas de véspera, de métodos diferentes, dão Flávio à frente. Os modelos de eleitor provável repetem o comparecimento do 1º turno e descontam a base pobre; o favoritismo publicado alimenta a contramobilização. | Eixo 4: a medição entra no circuito que mede; o número vira combustível afetivo (Postman, Han) e o eleitor cala a opinião que julga minoritária (Noelle-Neumann, apoio). |
 | **A aprovação como voto retrospectivo.** Na véspera, a aprovação do governo volta a superar a desaprovação pela primeira vez desde agosto, e a razão entre as duas antecipa quase exatamente o resultado da urna, melhor que a intenção de voto declarada. | Eixos 1 e 2: a proteção social funciona como contramovimento (Polanyi) e a escassez orienta o julgamento da própria vida sob o governo. O mesmo mecanismo pune o governante em recessão (fase Ruptura). Base brasileira: o efeito eleitoral do Bolsa Família (Zucco, apoio); contraponto: o voto por identidade de grupo (Achen e Bartels, apoio). |
-| **A classe se divide no fim.** Nos últimos dias, a base de renda baixa se fecha com Lula e o topo de renda e de escolaridade fecha com Flávio. A renda intermediária e o ensino médio ficam com Flávio do começo ao fim: a virada vem da base e do comparecimento, não do meio. | Eixo 6: realinhamento de classe do lulismo (Singer); o batalhador mantém o ethos do mérito (Jessé Souza). |
+| **A base fecha com Lula.** Nos últimos dias, a renda baixa e o ensino fundamental se fecham com Lula. | Eixo 6: realinhamento de classe do lulismo (Singer). Eixo 2: a escassez orienta o voto retrospectivo. |
+| **O topo se move no fim.** No mesmo intervalo, o topo de renda e o ensino superior fecham com Flávio; o superior chega a empatar dias antes e vira com força, enquanto a renda alta nunca sai do lado dele. | Segunda via (Eixo 6): o mesmo susto que mobiliza a base ativa o topo no sentido oposto (Stenner, Ziblatt). O diploma oscila e o patrimônio não: o “superior” mistura o topo e o batalhador diplomado, que volta ao ethos do mérito (Gethin e coautores; Jessé Souza). *(inferência da matriz)* |
+| **O meio não se move.** A renda intermediária e o ensino médio ficam com Flávio do começo ao fim: a virada vem da base e do comparecimento, não do meio. | Eixo 6: o batalhador mantém o ethos do mérito (Jessé Souza). |
 | **A distância de gênero.** Mulheres pendem a Lula e homens a Flávio, com distância estável e larga durante todo o 2º turno. | Eixo 3: mandato de masculinidade (Segato) e o homem humilhado (Reich). Por que as mulheres pendem a Lula segue sem obra que explique. |
 | **Geração e igreja estáveis.** Jovens seguem com Flávio, com distância menor; idosos com Lula. Evangélicos ficam com Flávio na proporção de dois para um, mas um terço vota em Lula; católicos pendem a Lula. | Eixo 6: socialização geracional (Mannheim). Eixo 3: a igreja é rede, não bloco total (Spyer). |
 | **Geografia.** O Nordeste amplia a vantagem de Lula até o teto; Minas vira e volta a espelhar o país; Sul, Sudeste e Centro-Oeste dão a Lula os maiores ganhos relativos sem mudar de lado. | Eixo 6: fila do benefício (Hochschild, Lamont) consolidada e territorialidade do voto (Nicolau). |
+| **Pela democracia, não pelo lulismo.** Mais de 200 artistas e influenciadores, com mais de 400 milhões de seguidores somados, declaram apoio a Lula desde o 1º turno (Pública, 12 out). O coletivo 342 Artes e a Mídia Ninja lançam o vídeo “Bora, Lula” (set) e organizam em 18 de outubro o Ato Musical pela Democracia em Copacabana e Salvador, sem nome nem número no palco. A vencedora do BBB 26 declara voto dirigindo-se a eleitores de Cury, Renan Santos e Caiado (44,5 milhões de visualizações); a Frente de Evangélicos pelo Estado de Direito apoia Lula. O apelo é contra o risco à democracia, não a favor do PT. | Freios: a sociedade civil vira freio antes das instituições (Levitsky & Ziblatt). Eixo 4: confiança parassocial a serviço da democracia (DiResta). Eixo 3: a ameaça ativa o lado democrático (Stenner). Segunda via: explica a hesitação do diploma, que vota contra o risco e não pela esquerda (Gethin e coautores) *(inferência da matriz)*. |
+| **A direita contra Flávio.** A página “Direita contra Flávio” reúne 22 nomes da direita que se recusam a votar nele, entre eles nove ex-integrantes do governo e das campanhas bolsonaristas e cinco articuladores do impeachment de Dilma: o general Santos Cruz, Kim Kataguiri, Joice Hasselmann, João Amoêdo, Abraham Weintraub, Luciano Bivar, Miguel Reale Júnior e o pastor Otoni de Paula (Brasil de Fato, 20 out). Alguns vão além da recusa: Joice, lavajatista e biógrafa de Moro, vota em Lula no 2º turno depois de 25 anos de oposição ao PT, por medo de um governo Flávio (Poder360, 25 out); Bivar, ex-presidente do PSL, é suplente de Humberto Costa (PT) “pela democracia”; Soraya Thronicke e Julian Lemos, eleitos na onda de 2018, pedem voto em Lula (CartaCapital, ago). Amoêdo ataca Flávio pela visita a Vorcaro preso. | Eixo 7: parte dos guardiões da direita volta a filtrar o extremista (Levitsky & Ziblatt), contra o padrão do Senado (Ziblatt). Segunda via: o topo liberal e lavajatista racha, e o caso Master, que une a irmandade, também a expõe e custa apoio no topo *(inferência da matriz)*. A maioria recusa Flávio sem aderir ao PT: o voto é contra o risco, não pelo lulismo. |
 | **A frente ampla no Executivo.** Alckmin, Tebet, Marina e governadores entram na coordenação final. | Eixo 7: no Executivo os guardiões funcionam (Levitsky e Ziblatt); no Senado, seguem falhando (Ziblatt). |
 | **Personalismo.** A militância se descreve como quem “corre” por um líder insubstituível. | Eixo 6: o sistema partidário pós-2013 não produz sucessão (Nobre) e o carisma não se rotiniza (Weber, apoio). A contenção depende de uma pessoa. |
 | **Contestação depois da urna.** Flávio anuncia pedido de cassação da chapa vencedora no TSE e é intimado a entregar o passaporte. | Eixo 7: a derrota no Executivo vira disputa jurídica com o Senado como trincheira (Scheppele); o teste do consentimento do perdedor (Przeworski, apoio). |
@@ -822,13 +922,17 @@ Lula vence com 51,8% dos válidos, a maior votação da história, depois de sai
 
 > [!todo] O que a matriz ainda não cobre
 > - **Militares depois de 2022:** [[6.12-leirner-o-brasil-no-espectro-de-uma-guerra-hibrida|Leirner]] para em 2020; falta uma obra sobre o 8 de Janeiro e o julgamento de 2025.
-> - **Empresariado urbano e casas de apostas como atores políticos:** o agro tem [[6.13-pompeia-formacao-politica-do-agronegocio|Pompeia]]; quem financiou disparos e a economia da aposta, não.
+> - **Casas de apostas e financiadores de disparos:** o agro tem [[6.13-pompeia-formacao-politica-do-agronegocio|Pompeia]] e o topo urbano entra pela segunda via; quem financiou disparos em 2018 e a economia da aposta seguem sem obra.
+> - **Segunda via com fichas, sem medida brasileira:** a adesão do topo agora tem fichas próprias (Jessé Souza 6.15 e 6.16, Robin 6.17, Sharlet 6.18, Alonso 6.19, Solano 6.20, Gethin e coautores 6.21, Bowler 3.12, Weber 3.13), somadas às relidas (Ziblatt, Caldeira, Lamont, Brown, Adorno). Todas, menos Gethin, são teoria, etnografia ou caso americano; o mecanismo da segunda via segue *(inferência da matriz)*.
+> - **Igreja dos ricos no Brasil:** Bowler e Sharlet são americanos e Mariano é de 1999. Sobre igrejas de classe alta no Brasil há só artigos sobre a Bola de Neve (Maranhão Filho, apoio); falta obra sobre Lagoinha e Zion e suas redes com finança e política. O caso Master entra como fato.
+> - **Voto do topo medido:** só o capítulo sobre o Brasil de Gethin e coautores; falta estudo brasileiro sobre o voto e o financiamento do empresariado depois de 2018.
+> - **Voto por renda e escolaridade na urna:** o TSE só dá o voto por território; o cruzamento do resultado municipal com o Censo de 2022 (o método de Nicolau) fica como agenda.
 > - **Gênero do voto:** [[3.11-biroli-machado-vaggione-genero-neoconservadorismo-e-democracia|Biroli, Machado e Vaggione]] mostram mulheres cristãs como agentes, mas nada explica por que as mulheres deram vantagem a Lula em 2022 e de novo no 2º turno de 2026, nem por que os homens pendem ao outro lado.
 > - **Comparecimento e voto retrospectivo:** Samuels e Zucco, Zucco e Achen e Bartels ficam no catálogo de apoio; nenhuma ficha trata de quem vai votar.
 > - **Pesquisa como ator:** só Noelle-Neumann, no catálogo de apoio; falta obra sobre o efeito das pesquisas publicadas na mobilização brasileira.
 > - **Consentimento do perdedor e sucessão:** Przeworski e Weber ficam no catálogo de apoio; falta obra brasileira sobre a sucessão de Lula.
 > - **Mensageria:** [[4.12-nemer-technology-of-the-oppressed|Nemer]] estudou poucos grupos; falta um estudo amplo do WhatsApp e do Telegram depois de 2022.
-> - **Eixo 5 sem medida de efeito:** Castro, Frigotto e Freire dão base brasileira ao eixo, mas nenhuma obra mede o efeito das escolas cívico-militares sobre o voto.
+> - **Eixo 5 sem medida de efeito:** Castro, Frigotto e Freire dão base brasileira ao eixo, e a dissertação de Giacomin sobre o Paraná ([[5.9-giacomin-escolas-civico-militares-no-parana|2024]]) mostra os princípios formativos dos colégios cívico-militares. Os balanços da área (Alves e Toschi, 2019; Miranda e Silva, 2023) confirmam que nenhuma pesquisa mede o efeito dessas escolas sobre a formação política ou o voto. *Meia-volta, volver* (Queiroz e Frigotto) ainda não tem ebook.
 > - **Contrapontos fora da lista:** Doctorow e Benkler seguem no catálogo de apoio de `00-lista-de-obras.md`.
 
 ---
@@ -871,6 +975,8 @@ A ordem segue os eixos, do fundamento ao desfecho, com um contraponto em cada et
 - [ ] [[3.9-mariano-neopentecostais|Mariano · Neopentecostais]]
 - [ ] [[3.10-almeida-bolsonaro-presidente|Almeida · Bolsonaro presidente]]
 - [ ] [[3.11-biroli-machado-vaggione-genero-neoconservadorismo-e-democracia|Biroli, Machado & Vaggione · Gênero, neoconservadorismo e democracia]]
+- [ ] [[3.13-weber-sociologia-da-religiao|Weber · Sociologia da religião]]
+- [ ] [[3.12-bowler-blessed|Bowler · Blessed]]
 - *Contraponto:*
   - [ ] [[3.7-spyer-povo-de-deus|Spyer · Povo de Deus]]
   - [ ] [[3.4-hochschild-strangers-in-their-own-land|Hochschild · Strangers in Their Own Land]]
@@ -902,6 +1008,7 @@ A ordem segue os eixos, do fundamento ao desfecho, com um contraponto em cada et
 - [x] [[5.8-altemeyer-the-authoritarians|Altemeyer · The Authoritarians]]
 - [x] [[5.6-castro-o-espirito-militar|Castro · O espírito militar]]
 - [x] [[5.7-frigotto-escola-sem-partido|Frigotto (org.) · Escola “sem” partido]]
+- [ ] [[5.9-giacomin-escolas-civico-militares-no-parana|Giacomin · Escolas cívico-militares no Paraná]]
 - *Contraponto:*
   - [x] [[5.5-freire-pedagogia-do-oprimido|Freire · Pedagogia do Oprimido]]
   - Han, *Sociedade do Cansaço* (o fim da sociedade disciplinar)
@@ -922,6 +1029,14 @@ A ordem segue os eixos, do fundamento ao desfecho, com um contraponto em cada et
 - [ ] [[6.12-leirner-o-brasil-no-espectro-de-uma-guerra-hibrida|Leirner · O Brasil no espectro de uma guerra híbrida]]
 - [ ] [[6.13-pompeia-formacao-politica-do-agronegocio|Pompeia · Formação política do agronegócio]]
 - [ ] [[6.14-nunes-do-transe-a-vertigem|Nunes · Do transe à vertigem]]
+- *Segunda via, o topo:*
+  - [ ] [[6.15-jesse-souza-a-elite-do-atraso|Jessé Souza · A elite do atraso]]
+  - [ ] [[6.16-jesse-souza-a-classe-media-no-espelho|Jessé Souza · A classe média no espelho]]
+  - [ ] [[6.17-robin-the-reactionary-mind|Robin · The Reactionary Mind]]
+  - [ ] [[6.19-alonso-treze|Alonso · Treze]]
+  - [ ] [[6.20-solano-o-odio-como-politica|Solano (org.) · O ódio como política]]
+  - [ ] [[6.18-sharlet-the-family|Sharlet · The Family]]
+  - [ ] [[6.21-gethin-martinez-toledano-piketty-political-cleavages|Gethin, Martínez-Toledano & Piketty · Political Cleavages]]
 - *Contraponto:* Norris & Inglehart
 
 ### Etapa 7 · Desfecho
@@ -956,6 +1071,7 @@ A ordem segue os eixos, do fundamento ao desfecho, com um contraponto em cada et
 | **Economia da aposta** | Cadeia que liga escassez, apostas online, plataformas e influenciadores patrocinados; regular as apostas atinge a renda de quem comunica. |
 | **Empreendedorismo político** | A política transformada em oportunidade de negócio pessoal, do influenciador ao Centrão (Nunes). |
 | **Engrandecimento do Executivo** | Concentração gradual de poder pelo governante eleito (Bermeo). |
+| **Esquerda do diploma × direita do patrimônio** | Divisão do topo nas democracias ricas, com diplomados à esquerda e donos de patrimônio à direita; no Brasil, até 2018, os dois votam juntos (Gethin, Martínez-Toledano & Piketty). |
 | **Estado suicidário** | Estado que abandona a função de proteger contra a morte e naturaliza catástrofes (Safatle). |
 | **Fala do crime** | Narrativas cotidianas sobre o crime que separam “cidadãos de bem” de “bandidos” e legitimam muros e violência (Caldeira). |
 | **Falha dos guardiões** | Enfraquecimento dos partidos de centro-direita que antes filtravam extremistas (Ziblatt). |
@@ -965,8 +1081,10 @@ A ordem segue os eixos, do fundamento ao desfecho, com um contraponto em cada et
 | **Fronteiras morais** | Distinções que grupos traçam para afirmar dignidade contra quem está abaixo (Lamont). |
 | **Guerra híbrida** | Conflito travado na informação e na percepção, sem front visível, que apaga a fronteira entre guerra e política (Leirner). |
 | **Heteronomia** | Agir por regras impostas de fora; o oposto de autonomia, *Mündigkeit* (Adorno). |
+| **Hierarquia privada** | O mando do patrão, do pai e do senhor na casa e no trabalho, que o conservadorismo defende antes de qualquer pauta pública (Robin). |
 | **História profunda** | Narrativa sentida como verdadeira por quem se vê ultrapassado na fila (Hochschild). |
 | **Infraestrutura humana da desinformação** | Rede de pessoas que produz, distribui e protege notícias falsas em grupos fechados (Nemer). |
+| **Irmandade** | Rede de elite unida pela linguagem de parentesco espiritual, em que favor, acesso e negócio passam por amizade religiosa (Sharlet). |
 | **Juridificação reativa** | Uso de leis e tribunais por grupos que reagem a avanços de direitos para fixar uma moral para todos (Vaggione). |
 | **Largura de banda cognitiva** | Capacidade mental disponível, reduzida pela escassez de tempo e dinheiro (Mullainathan & Shafir). |
 | **Legalismo autocrático** | Uso de reformas formalmente legais para desmontar a democracia (Scheppele). |
@@ -984,6 +1102,7 @@ A ordem segue os eixos, do fundamento ao desfecho, com um contraponto em cada et
 | **Solidão organizada** | Perda do mundo comum que torna indivíduos disponíveis para movimentos totais (Arendt). |
 | ***Spin* (ditadura da manipulação)** | Regime que governa pela informação e pela aparência de normalidade, não pelo terror (Guriev & Treisman). |
 | **Superávit comportamental** | Dados de comportamento usados além do serviço, para prever e induzir conduta (Zuboff). |
+| **Teodiceia da fortuna** | A necessidade de quem tem sorte de sentir que a merece; a religião a oferece ao lado da promessa de compensação a quem sofre (Weber). |
 | **Teologia da Prosperidade** | Doutrina que liga fé, contribuição à igreja e sucesso material nesta vida (Mariano). |
 | **Vigilância aberta** | Mecanismos mentais que nos deixam abertos à informação útil e fechados à nociva; contra a ideia de credulidade (Mercier). |
 | ***Zero-rating*** | Prática das operadoras de não cobrar dados de certos aplicativos; faz do WhatsApp a internet de quem tem plano pré-pago. |

@@ -1,6 +1,6 @@
 ---
 documento: Lista de obras
-total: 73
+total: 83
 ordem: por eixo; cronológica dentro de cada eixo (acréscimos de out/2026 entram no fim do eixo para não quebrar links existentes)
 ---
 
@@ -50,6 +50,8 @@ Legenda de status: `feito` · `pendente`. Tipo: `livro` (resumir capítulos) ou 
 | 3.9 | [[3.9-mariano-neopentecostais]] | Ricardo Mariano | Neopentecostais | 1999 | livro | media | feito |
 | 3.10 | [[3.10-almeida-bolsonaro-presidente]] | Ronaldo de Almeida | Bolsonaro presidente | 2019 | artigo | media | feito |
 | 3.11 | [[3.11-biroli-machado-vaggione-genero-neoconservadorismo-e-democracia]] | Flávia Biroli, Maria das Dores Campos Machado e Juan Marco Vaggione | Gênero, neoconservadorismo e democracia | 2020 | livro | media | feito |
+| 3.12 | [[3.12-bowler-blessed]] | Kate Bowler | Blessed: A History of the American Prosperity Gospel | 2013 | livro | media | feito |
+| 3.13 | [[3.13-weber-sociologia-da-religiao]] | Max Weber | Sociologia da religião (The Sociology of Religion) | 1922 | livro | media | feito |
 
 ## Eixo 4. Mente e tecnologia
 
@@ -81,6 +83,7 @@ Legenda de status: `feito` · `pendente`. Tipo: `livro` (resumir capítulos) ou 
 | 5.6 | [[5.6-castro-o-espirito-militar]] | Celso Castro | O espírito militar | 1990 | livro | media | feito |
 | 5.7 | [[5.7-frigotto-escola-sem-partido]] | Gaudêncio Frigotto (org.) | Escola "sem" partido | 2017 | livro | media | feito |
 | 5.8 | [[5.8-altemeyer-the-authoritarians]] | Bob Altemeyer | The Authoritarians | 2006 | livro | media | feito |
+| 5.9 | [[5.9-giacomin-escolas-civico-militares-no-parana]] | Marcia Gevieski Giacomin | Escolas cívico-militares no Paraná sob a égide neoconservadora (dissertação, Unioeste) | 2024 | livro | media | feito |
 
 ## Eixo 6. Brasil
 
@@ -100,6 +103,13 @@ Legenda de status: `feito` · `pendente`. Tipo: `livro` (resumir capítulos) ou 
 | 6.12 | [[6.12-leirner-o-brasil-no-espectro-de-uma-guerra-hibrida]] | Piero Leirner | O Brasil no espectro de uma guerra híbrida | 2020 | livro | media | feito |
 | 6.13 | [[6.13-pompeia-formacao-politica-do-agronegocio]] | Caio Pompeia | Formação política do agronegócio | 2021 | livro | media | feito |
 | 6.14 | [[6.14-nunes-do-transe-a-vertigem]] | Rodrigo Nunes | Do transe à vertigem | 2022 | livro | media | feito |
+| 6.15 | [[6.15-jesse-souza-a-elite-do-atraso]] | Jessé Souza | A elite do atraso | 2017 | livro | media | feito |
+| 6.16 | [[6.16-jesse-souza-a-classe-media-no-espelho]] | Jessé Souza | A classe média no espelho | 2018 | livro | media | feito |
+| 6.17 | [[6.17-robin-the-reactionary-mind]] | Corey Robin | The Reactionary Mind (2ª ed.) | 2018 | livro | media | feito |
+| 6.18 | [[6.18-sharlet-the-family]] | Jeff Sharlet | The Family | 2008 | livro | media | feito |
+| 6.19 | [[6.19-alonso-treze]] | Angela Alonso | Treze | 2023 | livro | media | feito |
+| 6.20 | [[6.20-solano-o-odio-como-politica]] | Esther Solano (org.) | O ódio como política | 2018 | livro | media | feito |
+| 6.21 | [[6.21-gethin-martinez-toledano-piketty-political-cleavages]] | Amory Gethin, Clara Martínez-Toledano e Thomas Piketty | Political Cleavages and Social Inequalities | 2021 | livro | media | feito |
 
 ## Eixo 7. Desfecho institucional
 
@@ -135,7 +145,6 @@ Obras citadas na matriz que não viram ficha. Uma linha cada, sem ID, por isso o
 | Estudos Meta e acadêmicos sobre o feed (*Science* e *Nature*) | 2023 | 4 | mudar o algoritmo do feed alterou pouco as atitudes políticas |
 | Levi Boxell, Matthew Gentzkow e Jesse Shapiro, estudo sobre polarização e internet | 2017 | 4 | a polarização cresceu mais entre quem menos usa internet |
 | Pippa Norris e Ronald Inglehart, *Cultural Backlash* | 2019 | 3 | reação cultural dos mais velhos; contrariado pela clivagem etária brasileira de 2026 |
-| Amory Gethin, Clara Martínez-Toledano e Thomas Piketty, *Political Cleavages and Social Inequalities* | 2021 | 6 | no Brasil, escolaridade se confunde com renda |
 | David Samuels e Cesar Zucco, *Partisans, Antipartisans, and Nonpartisans* | 2018 | 6 | antipetismo medido como identidade partidária negativa |
 | Cesar Zucco, "When Payouts Pay Off" | 2013 | 6 | efeito eleitoral do Bolsa Família; base da fila do benefício e do voto retrospectivo |
 | Christopher Achen e Larry Bartels, *Democracy for Realists* | 2016 | 7 | contraponto: voto por identidade de grupo e punição cega do governante |
@@ -144,5 +153,29 @@ Obras citadas na matriz que não viram ficha. Uma linha cada, sem ID, por isso o
 | Lilliana Mason, *Uncivil Agreement* | 2018 | 7 | polarização afetiva e identidades empilhadas |
 | Pippa Norris e Ronald Inglehart, *Rising Tide* | 2003 | 3 | a virada das mulheres à esquerda; ponto de partida para o gênero do voto |
 | Max Weber, rotinização do carisma (*Economia e Sociedade*) | 1922 | 6 | sucessão de um líder insubstituível |
+| Miriam Fábia Alves e Mirza Seabra Toschi, “A militarização das escolas públicas” (*RBPAE*) | 2019 | 5 | balanço das pesquisas em educação sobre militarização; contexto da 5.9 |
+| Edna Mara Corrêa Miranda e Francisco Thiago Silva, “Escolas cívico-militarizadas no Brasil: um estado do conhecimento” (*Educação*, UFSM) | 2023 | 5 | mapa da produção; nenhuma pesquisa mede efeito sobre formação política ou voto |
+| Felipe Queiroz e Gaudêncio Frigotto (orgs.), *Meia-volta, volver: a violência da militarização das escolas no Brasil* | 2026 | 5 | sem ebook; candidata a ficha quando sair |
+| Eduardo Meinberg de Albuquerque Maranhão Filho, “Nós somos a dobradiça da porta”: mulheres na Bola de Neve Church | 2012 | 3 | igreja de jovens de classe média e média alta; gênero e consumo na igreja do topo |
+| Fábio Porchat, *Revelando: Grandes Igrejas, Master Negócios* (vídeo, Calma Urgente) | 2026 | 6 | fonte factual do caso Master–Lagoinha (§5.4); transcrição em `estudos-sociologicos/fontes/` |
+
+## Fichas da segunda via e da igreja dos ricos (concluídas em out/2026)
+
+As fichas abaixo, concluídas em 29 out 2026, sustentam a segunda via do topo e a igreja dos ricos (Eixo 6 da matriz). Os ebooks estão em `estudos-sociologicos/ebooks/`, já conferidos (texto extraível e sumário):
+
+| ID | Ebook a usar | Observação |
+| --- | --- | --- |
+| 5.9 | `Giacomin_Escolas cívico-militares no Paraná sob a égide neoconservadora.pdf` | 3 capítulos; o 3 analisa o manual dos colégios cívico-militares do Paraná |
+| 3.12 | `Blessed A History of the American Prosperity Gospel (Kate Bowler).epub` | 5 capítulos e apêndice de megaigrejas |
+| 3.13 | `The-Sociology-Of-Religion_text.pdf` | caps. VI, VII e IX (teodiceia); o Adair-Toteff (`max-webers-sociology-of-religion-…pdf`) serve às Críticas |
+| 6.15 | `a-elite-do-atraso-da-escravidao-a-bolsonaro-ediao-revista-e-ampliada-….epub` | edição revista e ampliada; o pdf de 2017 é duplicado |
+| 6.16 | `A classe média no espelho … (Jessé Souza).epub` | inclui entrevistas com a alta classe média |
+| 6.17 | `the-reactionary-mind-…-donald-trump-0190692006-9780190692001.pdf` | 2ª ed.; cap. 1 “The Private Life of Power” |
+| 6.18 | `The Family (Jeff Sharlet).epub` | 14 capítulos |
+| 6.19 | `Treze - Angela Alonso.epub` | 6 capítulos |
+| 6.20 | `o-odio-como-politica-…-9788575594919.epub` | coletânea; para a segunda via, Casimiro e Rossi & Dweck |
+| 6.21 | `Political Cleavages and Social Inequalities … .pdf` + `gethin-martinez-toledano-piketty-brahmin-left-merchant-right-2022.pdf` | cap. 14 (Brasil) e o artigo de 2022 |
+
+Todas trocaram na matriz a marca “ficha pendente” pelo link `[[...]]` e ligam nas Conexões a 6.9 Jessé Souza (a via de baixo) e a 3.2 Lamont. Fichas já relidas sob essa ótica: 6.7 Caldeira, 7.12 Ziblatt, 3.9 Mariano, 3.2 Lamont, 2.8 Brown, 5.1 Adorno.
 
 Nota sobre 6.8: Mannheim é teoria geral, mas fica no Eixo 6 porque entrou na matriz para explicar a clivagem geracional do voto brasileiro em 2026.
