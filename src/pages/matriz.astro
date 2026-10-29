@@ -1,5 +1,6 @@
 ---
-import { getEntry, render } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
+import { getVersaoMatriz } from '../lib/eixos';
 import ReaderLayout from '../layouts/ReaderLayout.astro';
 
 const matrizEntry = await getEntry('matriz', 'matriz-teorica-autocracia-tecnologia-exaustao-cognitiva');
@@ -8,6 +9,8 @@ if (!matrizEntry) {
 }
 
 const { Content, headings } = await render(matrizEntry);
+const totalFichas = (await getCollection('fichas')).length;
+const { versao, mesAno } = await getVersaoMatriz();
 
 // Extrai seções h2 para o sumário lateral da Matriz
 const tocItems = headings
@@ -33,9 +36,9 @@ const breadcrumbs = [
     <header class="matriz-header">
       <div class="matriz-badge-strip">
         <span class="badge-eixo">Documento Integrador</span>
-        <span>Versão 5 · Outubro 2026</span>
+        <span>Versão {versao} · {mesAno}</span>
         <span>•</span>
-        <span>69 Fichas de Estudo</span>
+        <span>{totalFichas} Fichas de Estudo</span>
       </div>
 
       <h1 class="matriz-main-title">Matriz Teórica</h1>
@@ -72,7 +75,7 @@ const breadcrumbs = [
     <footer class="matriz-footer">
       <div class="footer-box">
         <h3>Explorar as Obras Fichadas</h3>
-        <p>Acesse o catálogo completo com as 69 fichas analíticas detalhadas.</p>
+        <p>Acesse o catálogo completo com as {totalFichas} fichas analíticas detalhadas.</p>
         <a href="/obras" class="btn-catalogo">Ir para o Catálogo de Obras →</a>
       </div>
     </footer>

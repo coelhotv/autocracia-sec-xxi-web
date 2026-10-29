@@ -11,7 +11,7 @@ O projeto foi construído para ser **100% estático, ultra-rápido e de custo ze
 
 ```
 [Seu Computador / macOS]
-  └─ Obsidian (iCloud)  ----(npm run sync)---->  site/content/ (Markdown das 69 fichas)
+  └─ Obsidian (iCloud)  ----(npm run sync)---->  site/content/ (Markdown das fichas)
                                                        │
                                                        ▼
                                             Astro v5 (Gerador de Páginas)
@@ -24,12 +24,12 @@ O projeto foi construído para ser **100% estático, ultra-rápido e de custo ze
 ```
 
 ### Como os arquivos se organizam:
-- `site/content/`: Pasta onde ficam as cópias das 69 fichas e da matriz teórica dentro do projeto web.
+- `site/content/`: Pasta onde ficam as cópias das fichas e da matriz teórica dentro do projeto web.
 - `site/src/pages/`: As páginas do site:
   - `index.astro`: A página inicial (Home) com a tese e o mapa dos 7 eixos.
   - `matriz.astro`: A Matriz Teórica Integral de leitura contínua.
   - `obras/index.astro`: O Catálogo com filtros de pesquisa e ordenação.
-  - `obras/[...slug].astro`: O modelo visual que gera as páginas individuais de cada uma das 69 obras.
+  - `obras/[...slug].astro`: O modelo visual que gera as páginas individuais de cada uma das obras.
 - `site/scripts/sync-vault.mjs`: Script que busca as fichas atualizadas da sua pasta do Obsidian/iCloud e traz para o site.
 
 ---
@@ -97,7 +97,7 @@ Como o repositório já está criado e público no seu GitHub ([github.com/coelh
 5. Clique no botão **"Deploy"**.
 
 ### Passo 4: Pronto!
-- Em aproximadamente 30 a 50 segundos, a Vercel compilará as 72 páginas e exibirá uma tela de comemoração com o link público definitivo (exemplo: `https://autocracia-sec-xxi-web.vercel.app`).
+- Em aproximadamente 30 a 50 segundos, a Vercel compilará as páginas e exibirá uma tela de comemoração com o link público definitivo (exemplo: `https://autocracia-sec-xxi-web.vercel.app`).
 - O site ganha certificado SSL automático (HTTPS), proteção contra ataques e carregamento instantâneo em todo o mundo.
 
 ---

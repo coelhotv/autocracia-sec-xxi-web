@@ -1,83 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { getEixos, getVersaoMatriz } from '../lib/eixos';
 
 const fichas = await getCollection('fichas');
 const totalObras = fichas.length;
 
-const eixos = [
-  {
-    num: 1,
-    nome: "Raízes psíquicas",
-    pergunta: "Por que pessoas abrem mão da liberdade?",
-    autores: "Fromm, Polanyi, Arendt, Safatle, Reich",
-    cor: "var(--eixo-1)",
-    tint: "var(--eixo-1-tint)",
-    border: "var(--eixo-1-border)",
-    total: fichas.filter(f => f.data.id.startsWith('1.')).length,
-  },
-  {
-    num: 2,
-    nome: "Base material",
-    pergunta: "Como o desgaste do tempo, do corpo e do cuidado prepara o terreno?",
-    autores: "Federici, Rosa, Crary, Mullainathan & Shafir, Brown, Fraser",
-    cor: "var(--eixo-2)",
-    tint: "var(--eixo-2-tint)",
-    border: "var(--eixo-2-border)",
-    total: fichas.filter(f => f.data.id.startsWith('2.')).length,
-  },
-  {
-    num: 3,
-    nome: "Moral, gênero e religião",
-    pergunta: "Como o medo se torna combustível político?",
-    autores: "Butler, Lamont, Stenner, Hochschild, Segato, Spyer, Mariano, Almeida",
-    cor: "var(--eixo-3)",
-    tint: "var(--eixo-3-tint)",
-    border: "var(--eixo-3-border)",
-    total: fichas.filter(f => f.data.id.startsWith('3.')).length,
-  },
-  {
-    num: 4,
-    nome: "Mente e tecnologia",
-    pergunta: "Como a mediação algorítmica captura e exaure a atenção pública?",
-    autores: "Postman, Fisher, Han, Zuboff, Empoli, Campos Mello, Cesarino, DiResta",
-    cor: "var(--eixo-4)",
-    tint: "var(--eixo-4-tint)",
-    border: "var(--eixo-4-border)",
-    total: fichas.filter(f => f.data.id.startsWith('4.')).length,
-  },
-  {
-    num: 5,
-    nome: "Instituições e coerção",
-    pergunta: "Como o controle se capilariza antes de se converter em regime?",
-    autores: "Adorno, Foucault",
-    cor: "var(--eixo-5)",
-    tint: "var(--eixo-5-tint)",
-    border: "var(--eixo-5-border)",
-    total: fichas.filter(f => f.data.id.startsWith('5.')).length,
-  },
-  {
-    num: 6,
-    nome: "Brasil e política aplicada",
-    pergunta: "Como esse circuito se materializou na história brasileira recente?",
-    autores: "Jessé Souza, Singer, Feltran, Pinheiro-Machado, Nobre, Nicolau, Paes Manso",
-    cor: "var(--eixo-6)",
-    tint: "var(--eixo-6-tint)",
-    border: "var(--eixo-6-border)",
-    total: fichas.filter(f => f.data.id.startsWith('6.')).length,
-  },
-  {
-    num: 7,
-    nome: "Saídas e resistência",
-    pergunta: "Quais freios institucionais e respostas teóricas restam à democracia?",
-    autores: "Zakaria, Bermeo, Müller, Levitsky & Ziblatt, Applebaum, Guriev & Treisman",
-    cor: "var(--eixo-7)",
-    tint: "var(--eixo-7-tint)",
-    border: "var(--eixo-7-border)",
-    total: fichas.filter(f => f.data.id.startsWith('7.')).length,
-  },
-];
----
+const eixos = (await getEixos()).map((e) => ({
+  ...e,
+  cor: `var(--eixo-${e.num})`,
+  tint: `var(--eixo-${e.num}-tint)`,
+  border: `var(--eixo-${e.num}-border)`,
+  total: fichas.filter((f) => f.data.id.startsWith(`${e.num}.`)).length,
+}));
+const { mesAno } = await getVersaoMatriz();---
 
 <BaseLayout
   title="Autocracia, Tecnologia e Exaustão Cognitiva — Matriz Teórica e Fichas de Estudo"
@@ -87,7 +23,7 @@ const eixos = [
 
     <!-- HERO SECTION -->
     <section class="hero-section">
-      <div class="hero-badge">Investigação Sociológica & Teoria Crítica · Outubro 2026</div>
+      <div class="hero-badge">Investigação Sociológica & Teoria Crítica · {mesAno}</div>
       <h1 class="hero-title">Autocracia, Tecnologia e Exaustão Cognitiva</h1>
       <p class="hero-subtitle">
         Dominação psíquica, material e institucional: uma investigação sobre como sociedades cansadas, isoladas e hiperconectadas elegem a própria perda de liberdade.
@@ -143,7 +79,7 @@ const eixos = [
       <div class="section-header-block">
         <h2 class="section-heading">Os Sete Eixos Temáticos</h2>
         <p class="section-desc">
-          O corpus reúne 69 obras fundamentais da sociologia, psicanálise, economia política e teoria democrática, respondendo a sete perguntas nucleares.
+          O corpus reúne {totalObras} obras fundamentais da sociologia, psicanálise, economia política e teoria democrática, respondendo a sete perguntas nucleares.
         </p>
       </div>
 

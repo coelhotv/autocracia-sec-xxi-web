@@ -5,7 +5,7 @@ import ReaderLayout from '../../layouts/ReaderLayout.astro';
 export async function getStaticPaths() {
   const fichas = await getCollection('fichas');
 
-  // Ordena rigorosamente as 69 fichas pelo ID numérico do eixo e da obra
+  // Ordena rigorosamente as fichas pelo ID numérico do eixo e da obra
   const sorted = [...fichas].sort((a, b) => {
     const [aEixo, aNum] = a.data.id.split('.').map(Number);
     const [bEixo, bNum] = b.data.id.split('.').map(Number);

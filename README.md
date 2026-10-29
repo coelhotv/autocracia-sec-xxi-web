@@ -2,7 +2,7 @@
 
 Plataforma estática de estudos sociológicos e teoria política contemporânea por **Antonio Coelho**.
 
-Reúne a **Matriz Teórica Integral** e **69 Fichas Analíticas de Leitura** organizadas em sete eixos para investigar por que e como democracias do século XXI elegem autocracias através de cansaço cognitivo, plataformização e precarização material.
+Reúne a **Matriz Teórica Integral** e **Fichas Analíticas de Leitura** organizadas em sete eixos para investigar por que e como democracias do século XXI elegem autocracias através de cansaço cognitivo, plataformização e precarização material.
 
 ## Arquitetura
 - **Framework**: [Astro v5](https://astro.build/) em modo estático (`output: 'static'`)

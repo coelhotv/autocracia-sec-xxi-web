@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { getEixos } from '../../lib/eixos';
 
 const fichas = await getCollection('fichas');
 
@@ -16,20 +17,15 @@ const breadcrumbs = [
   { label: 'Obras' }
 ];
 
-const eixosLabels: Record<string, string> = {
-  '1': 'Eixo 1 · Raízes psíquicas',
-  '2': 'Eixo 2 · Base material',
-  '3': 'Eixo 3 · Moral, gênero e religião',
-  '4': 'Eixo 4 · Mente e tecnologia',
-  '5': 'Eixo 5 · Instituições e coerção',
-  '6': 'Eixo 6 · Brasil e política aplicada',
-  '7': 'Eixo 7 · Saídas e resistência',
-};
+const eixos = await getEixos();
+const eixosLabels: Record<string, string> = Object.fromEntries(
+  eixos.map((e) => [e.num, `Eixo ${e.num} · ${e.nome}`])
+);
 ---
 
 <BaseLayout
-  title="Catálogo das 69 Obras — Autocracia no Século XXI"
-  description="Catálogo interativo com as 69 fichas analíticas da Matriz Teórica de Autocracia, Tecnologia e Exaustão Cognitiva."
+  title={`Catálogo das ${fichas.length} Obras — Autocracia no Século XXI`}
+  description={`Catálogo interativo com as ${fichas.length} fichas analíticas da Matriz Teórica de Autocracia, Tecnologia e Exaustão Cognitiva.`}
   breadcrumbs={breadcrumbs}
 >
   <div class="catalog-container">
@@ -61,13 +57,7 @@ const eixosLabels: Record<string, string> = {
         <label for="eixoSelect" class="filter-label">Eixo Temático</label>
         <select id="eixoSelect" class="filter-select">
           <option value="all">Todos os 7 Eixos</option>
-          <option value="1">Eixo 1 · Raízes psíquicas</option>
-          <option value="2">Eixo 2 · Base material</option>
-          <option value="3">Eixo 3 · Moral, gênero e religião</option>
-          <option value="4">Eixo 4 · Mente e tecnologia</option>
-          <option value="5">Eixo 5 · Instituições e coerção</option>
-          <option value="6">Eixo 6 · Brasil e política aplicada</option>
-          <option value="7">Eixo 7 · Saídas e resistência</option>
+          {eixos.map((e) => <option value={e.num}>{eixosLabels[e.num]}</option>)}
         </select>
       </div>
 

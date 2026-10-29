@@ -1,7 +1,7 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-// Coleção das 69 Fichas de Leitura
+// Coleção das fichas de leitura
 const fichas = defineCollection({
   loader: glob({
     pattern: '[1-7].*.md',
@@ -37,7 +37,7 @@ const matriz = defineCollection({
     subtitulo: z.string().optional(),
     autor: z.string().default('Antonio Coelho'),
     versao: z.coerce.number().optional(),
-    atualizado: z.coerce.string().optional(),
+    atualizado: z.coerce.date().optional(),
     'dados-eleitorais': z.string().optional(),
     fichas: z.coerce.number().optional(),
     eixos: z.coerce.number().optional(),

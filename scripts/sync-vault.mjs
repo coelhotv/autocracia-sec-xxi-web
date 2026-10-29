@@ -64,4 +64,17 @@ for (const file of files) {
   }
 }
 
-console.log(`✅ Sincronização concluída: ${count} arquivos sincronizados para ${CONTENT_DIR}`);
+// Remove de content/ o que saiu do vault (ficha renomeada ou apagada), para não publicar página órfã
+const synced = new Set(files.filter((f) =>
+  /^[1-7]\..*\.md$/.test(f) || f === 'matriz-teorica-autocracia-tecnologia-exaustao-cognitiva.md' || f === '00-lista-de-obras.md'
+));
+let removed = 0;
+for (const file of fs.readdirSync(CONTENT_DIR)) {
+  if (file.endsWith('.md') && !synced.has(file)) {
+    fs.unlinkSync(path.join(CONTENT_DIR, file));
+    console.log(`🗑️  Removido de content/ (não existe mais no vault): ${file}`);
+    removed++;
+  }
+}
+
+console.log(`✅ Sincronização concluída: ${count} arquivos sincronizados, ${removed} removidos em ${CONTENT_DIR}`);
