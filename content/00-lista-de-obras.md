@@ -159,23 +159,4 @@ Obras citadas na matriz que não viram ficha. Uma linha cada, sem ID, por isso o
 | Eduardo Meinberg de Albuquerque Maranhão Filho, “Nós somos a dobradiça da porta”: mulheres na Bola de Neve Church | 2012 | 3 | igreja de jovens de classe média e média alta; gênero e consumo na igreja do topo |
 | Fábio Porchat, *Revelando: Grandes Igrejas, Master Negócios* (vídeo, Calma Urgente) | 2026 | 6 | fonte factual do caso Master–Lagoinha (§5.4); transcrição em `estudos-sociologicos/fontes/` |
 
-## Fichas da segunda via e da igreja dos ricos (concluídas em out/2026)
-
-As fichas abaixo, concluídas em 29 out 2026, sustentam a segunda via do topo e a igreja dos ricos (Eixo 6 da matriz). Os ebooks estão em `estudos-sociologicos/ebooks/`, já conferidos (texto extraível e sumário):
-
-| ID | Ebook a usar | Observação |
-| --- | --- | --- |
-| 5.9 | `Giacomin_Escolas cívico-militares no Paraná sob a égide neoconservadora.pdf` | 3 capítulos; o 3 analisa o manual dos colégios cívico-militares do Paraná |
-| 3.12 | `Blessed A History of the American Prosperity Gospel (Kate Bowler).epub` | 5 capítulos e apêndice de megaigrejas |
-| 3.13 | `The-Sociology-Of-Religion_text.pdf` | caps. VI, VII e IX (teodiceia); o Adair-Toteff (`max-webers-sociology-of-religion-…pdf`) serve às Críticas |
-| 6.15 | `a-elite-do-atraso-da-escravidao-a-bolsonaro-ediao-revista-e-ampliada-….epub` | edição revista e ampliada; o pdf de 2017 é duplicado |
-| 6.16 | `A classe média no espelho … (Jessé Souza).epub` | inclui entrevistas com a alta classe média |
-| 6.17 | `the-reactionary-mind-…-donald-trump-0190692006-9780190692001.pdf` | 2ª ed.; cap. 1 “The Private Life of Power” |
-| 6.18 | `The Family (Jeff Sharlet).epub` | 14 capítulos |
-| 6.19 | `Treze - Angela Alonso.epub` | 6 capítulos |
-| 6.20 | `o-odio-como-politica-…-9788575594919.epub` | coletânea; para a segunda via, Casimiro e Rossi & Dweck |
-| 6.21 | `Political Cleavages and Social Inequalities … .pdf` + `gethin-martinez-toledano-piketty-brahmin-left-merchant-right-2022.pdf` | cap. 14 (Brasil) e o artigo de 2022 |
-
-Todas trocaram na matriz a marca “ficha pendente” pelo link `[[...]]` e ligam nas Conexões a 6.9 Jessé Souza (a via de baixo) e a 3.2 Lamont. Fichas já relidas sob essa ótica: 6.7 Caldeira, 7.12 Ziblatt, 3.9 Mariano, 3.2 Lamont, 2.8 Brown, 5.1 Adorno.
-
 Nota sobre 6.8: Mannheim é teoria geral, mas fica no Eixo 6 porque entrou na matriz para explicar a clivagem geracional do voto brasileiro em 2026.
